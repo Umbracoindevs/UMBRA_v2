@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Umbra
+Comment=Umbra P2P Cryptocurrency
+Comment[fr]=Umbra, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Umbra, eşten eşe kriptografik sanal para birimi
+Exec=umbra-qt %u
+Terminal=false
+Type=Application
+Icon=umbra128
+MimeType=x-scheme-handler/umbra;
+Categories=Office;Finance;

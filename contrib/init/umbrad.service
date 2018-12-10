@@ -1,0 +1,26 @@
+[Unit]
+Description=Umbra's distributed currency daemon
+After=network.target
+
+[Service]
+User=umbra
+Group=umbra
+
+Type=forking
+PIDFile=/var/lib/umbrad/umbrad.pid
+
+ExecStart=/usr/bin/umbrad -daemon -pid=/var/lib/umbrad/umbrad.pid \
+          -conf=/etc/umbra/umbra.conf -datadir=/var/lib/umbrad
+
+ExecStop=-/usr/bin/umbra-cli -conf=/etc/umbra/umbra.conf \
+         -datadir=/var/lib/umbrad stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
