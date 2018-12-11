@@ -101,7 +101,7 @@ public:
         pchMessageStart[2] = 0xe6;
         pchMessageStart[3] = 0x04;
         vAlertPubKey = ParseHex("04200cf03e12d8b5e06266a7bcf9b77687be7cbc21dfdc4c1da88ea0c22183ceab887a8c5bcd51f8e04f1d8d76469c2999eebb53a806ce401e992c64bdc5b6bc1b");
-        nDefaultPort = 88765;
+        nDefaultPort = 88876;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Umbra starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 99999999;
         nMaxReorganizationDepth = 100;
@@ -209,7 +209,7 @@ public:
         pchMessageStart[2] = 0x2e;
         pchMessageStart[3] = 0xc5;
         vAlertPubKey = ParseHex("042292b1f401860eea99e1a8a103effbd7e1c013a59a1a3a0c91c9d1997a0bc6f338567278c11344802838c107055bf7c1641eaed61e879245c255a4f5be5746fc");
-        nDefaultPort = 7777;
+        nDefaultPort = 77777;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;

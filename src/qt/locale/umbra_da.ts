@@ -4039,8 +4039,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Umbra ALARM!" e-mail@administrator
         <translation>Der skal angives en masternodeprivkey i konfigurationen. For mere information, se i dokumentationen.</translation>
     </message>
     <message>
-        <source>(88765 could be used only on mainnet)</source>
-        <translation>(88765 kunne kun bruges på hovednettet)</translation>
+        <source>(88876 could be used only on mainnet)</source>
+        <translation>(88876 kunne kun bruges på hovednettet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4051,8 +4051,8 @@ For eksempel: alertnotify=Echo %% | mail - s "Umbra ALARM!" e-mail@administrator
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 88765 for mainnet)</source>
-        <translation>(skal være 88765 for hovednettet)</translation>
+        <source>(must be 88876 for mainnet)</source>
+        <translation>(skal være 88876 for hovednettet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

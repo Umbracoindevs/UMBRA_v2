@@ -6031,8 +6031,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Umbra Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+3"/>
-        <source>(88765 could be used only on mainnet)</source>
-        <translation type="unfinished">(88765 could be used only on mainnet)</translation>
+        <source>(88876 could be used only on mainnet)</source>
+        <translation type="unfinished">(88876 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6046,7 +6046,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Umbra Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 88765 for mainnet)</source>
+        <source>(must be 88876 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

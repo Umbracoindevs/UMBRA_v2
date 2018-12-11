@@ -226,10 +226,10 @@ QT_TRANSLATE_NOOP("umbra-core", ""
 QT_TRANSLATE_NOOP("umbra-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("umbra-core", "(88765 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("umbra-core", "(88876 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("umbra-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("umbra-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("umbra-core", "(must be 88765 for mainnet)"),
+QT_TRANSLATE_NOOP("umbra-core", "(must be 88876 for mainnet)"),
 QT_TRANSLATE_NOOP("umbra-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("umbra-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("umbra-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
