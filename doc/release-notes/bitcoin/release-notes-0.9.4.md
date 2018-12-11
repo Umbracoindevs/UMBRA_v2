@@ -20,7 +20,7 @@ bitcoind/bitcoin-qt (on Linux).
 OpenSSL Warning
 ================
 
-OpenSSL 1.0.0p / 1.0.1k was recently released and is being pushed out by
+OpenSSL 2.0.0p / 1.0.1k was recently released and is being pushed out by
 various operating system maintainers. Review by Gregory Maxwell determined that
 this update is incompatible with the Bitcoin system and could lead to consensus
 forks.

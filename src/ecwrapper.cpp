@@ -193,7 +193,7 @@ bool CECKey::Verify(const uint256& hash, const std::vector<unsigned char>& vchSi
     const unsigned char* sigptr = &vchSig[0];
     assert(norm_sig);
     if (d2i_ECDSA_SIG(&norm_sig, &sigptr, vchSig.size()) == NULL) {
-        /* As of OpenSSL 1.0.0p d2i_ECDSA_SIG frees and nulls the pointer on
+        /* As of OpenSSL 2.0.0p d2i_ECDSA_SIG frees and nulls the pointer on
          * error. But OpenSSL's own use of this function redundantly frees the
          * result. As ECDSA_SIG_free(NULL) is a no-op, and in the absence of a
          * clear contract for the function behaving the same way is more
