@@ -141,7 +141,11 @@ public:
 
 	hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x"));
+<<<<<<< HEAD
         assert(genesis.hashMerkleRoot == uint256("0xc61fbf01328779c84b18ca5ffd6dd77b"));
+=======
+        assert(genesis.hashMerkleRoot == uint256("0x"));
+>>>>>>> parent of 589d441... additions
 
         vSeeds.push_back(CDNSSeedData("45.63.76.241", "45.63.76.241"));
         vSeeds.push_back(CDNSSeedData("45.76.134.222", "45.76.134.222"));
