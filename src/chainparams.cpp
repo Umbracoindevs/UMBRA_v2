@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Umbra_v1.4.0 developers
+// Copyright (c) 2018 The Umbra_v2 developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -141,11 +141,7 @@ public:
 
 	hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x"));
-<<<<<<< HEAD
-        assert(genesis.hashMerkleRoot == uint256("0xc61fbf01328779c84b18ca5ffd6dd77b"));
-=======
         assert(genesis.hashMerkleRoot == uint256("0x"));
->>>>>>> parent of 589d441... additions
 
         vSeeds.push_back(CDNSSeedData("45.63.76.241", "45.63.76.241"));
         vSeeds.push_back(CDNSSeedData("45.76.134.222", "45.76.134.222"));
