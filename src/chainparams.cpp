@@ -140,7 +140,7 @@ public:
         genesis.nNonce = 2459082;
 
 	hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x21ba1da9e71c5763cc9385eb71e07e7dd7ddb85320a5bfd722d5a45272ed2aea"));
         assert(genesis.hashMerkleRoot == uint256("0xc61fbf01328779c84b18ca5ffd6dd77b"));
 
         vSeeds.push_back(CDNSSeedData("45.63.76.241", "45.63.76.241"));
