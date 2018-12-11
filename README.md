@@ -1,5 +1,5 @@
-# Umbra Coin New Devs 
+# Umbra Coin Devs Team
 
-# Official Release
+# UNOfficial Release
 
-# UMBRA-master_original_v1.4.0+
+# UMBRA_v2.0
