@@ -11,7 +11,7 @@
 
 class CBlockIndex;
 
-/** 
+/**
  * Block-chain checkpoints are compiled-in sanity checks.
  * They are updated every release or three.
  */
@@ -35,7 +35,7 @@ int GetTotalBlocksEstimate();
 //! Returns last CBlockIndex* in mapBlockIndex that is a checkpoint
 CBlockIndex* GetLastCheckpoint();
 
-double GuessVerificationProgress(CBlockIndex* pindex, bool fSigchecks = true);
+double GuessVerificationProgress(CBlockIndex* pindex, bool fSigchecks = false);
 
 extern bool fEnabled;
 
