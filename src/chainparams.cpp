@@ -140,12 +140,11 @@ public:
         genesis.nNonce = 7338351;
 
 	hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x7a00d7dbff29e88b520d500941484f40b39851cf52aac1dd212a23b376c0cf43"));
         assert(genesis.hashMerkleRoot == uint256("0xc759c7d72af4a651c06756eb17ce464c82b31457433102c0af83119a5645b003"));
 
-        vSeeds.push_back(CDNSSeedData("45.63.76.241", "45.63.76.241"));
-        vSeeds.push_back(CDNSSeedData("45.76.134.222", "45.76.134.222"));
-        vSeeds.push_back(CDNSSeedData("104.238.159.57", "104.238.159.57"));
+        vSeeds.push_back(CDNSSeedData("216.155.135.73", "216.155.135.73"));
+        vSeeds.push_back(CDNSSeedData("149.28.51.167", "149.28.51.167"));
+        vSeeds.push_back(CDNSSeedData("207.148.21.185", "207.148.21.185"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 68); // U
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 50); // N
@@ -156,8 +155,8 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fRequireRPCPassword = true;
-        fMiningRequiresPeers = true;
+        fRequireRPCPassword = false;
+        fMiningRequiresPeers = false;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
