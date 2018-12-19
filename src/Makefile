@@ -224,7 +224,7 @@ ARFLAGS = cru
 AM_V_AR = $(am__v_AR_$(V))
 am__v_AR_ = $(am__v_AR_$(AM_DEFAULT_VERBOSITY))
 am__v_AR_0 = @echo "  AR      " $@;
-am__v_AR_1 = 
+am__v_AR_1 =
 crypto_libbitcoin_crypto_a_AR = $(AR) $(ARFLAGS)
 crypto_libbitcoin_crypto_a_LIBADD =
 am__dirstamp = $(am__leading_dot)dirstamp
@@ -747,7 +747,7 @@ libbitcoinconsensus_la_OBJECTS = $(am_libbitcoinconsensus_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
 am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
 am__v_lt_0 = --silent
-am__v_lt_1 = 
+am__v_lt_1 =
 libbitcoinconsensus_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(AM_CXXFLAGS) $(CXXFLAGS) $(libbitcoinconsensus_la_LDFLAGS) \
@@ -981,11 +981,11 @@ am__v_P_1 = :
 AM_V_GEN = $(am__v_GEN_$(V))
 am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))
 am__v_GEN_0 = @echo "  GEN     " $@;
-am__v_GEN_1 = 
+am__v_GEN_1 =
 AM_V_at = $(am__v_at_$(V))
 am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))
 am__v_at_0 = @
-am__v_at_1 = 
+am__v_at_1 =
 DEFAULT_INCLUDES = -I. -I$(top_builddir)/src/config
 depcomp = $(SHELL) $(top_srcdir)/build-aux/depcomp
 am__depfiles_maybe = depfiles
@@ -999,7 +999,7 @@ LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 AM_V_CC = $(am__v_CC_$(V))
 am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))
 am__v_CC_0 = @echo "  CC      " $@;
-am__v_CC_1 = 
+am__v_CC_1 =
 CCLD = $(CC)
 LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
@@ -1007,7 +1007,7 @@ LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 AM_V_CCLD = $(am__v_CCLD_$(V))
 am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
-am__v_CCLD_1 = 
+am__v_CCLD_1 =
 CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \
 	$(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
 LTCXXCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
@@ -1017,7 +1017,7 @@ LTCXXCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 AM_V_CXX = $(am__v_CXX_$(V))
 am__v_CXX_ = $(am__v_CXX_$(AM_DEFAULT_VERBOSITY))
 am__v_CXX_0 = @echo "  CXX     " $@;
-am__v_CXX_1 = 
+am__v_CXX_1 =
 CXXLD = $(CXX)
 CXXLINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(AM_CXXFLAGS) \
@@ -1025,7 +1025,7 @@ CXXLINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 AM_V_CXXLD = $(am__v_CXXLD_$(V))
 am__v_CXXLD_ = $(am__v_CXXLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CXXLD_0 = @echo "  CXXLD   " $@;
-am__v_CXXLD_1 = 
+am__v_CXXLD_1 =
 OBJCXXCOMPILE = $(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \
 	$(AM_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS)
 LTOBJCXXCOMPILE = $(LIBTOOL) $(AM_V_lt) $(AM_LIBTOOLFLAGS) \
@@ -1035,7 +1035,7 @@ LTOBJCXXCOMPILE = $(LIBTOOL) $(AM_V_lt) $(AM_LIBTOOLFLAGS) \
 AM_V_OBJCXX = $(am__v_OBJCXX_$(V))
 am__v_OBJCXX_ = $(am__v_OBJCXX_$(AM_DEFAULT_VERBOSITY))
 am__v_OBJCXX_0 = @echo "  OBJCXX  " $@;
-am__v_OBJCXX_1 = 
+am__v_OBJCXX_1 =
 OBJCXXLD = $(OBJCXX)
 OBJCXXLINK = $(LIBTOOL) $(AM_V_lt) $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
 	--mode=link $(OBJCXXLD) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) \
@@ -1043,7 +1043,7 @@ OBJCXXLINK = $(LIBTOOL) $(AM_V_lt) $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
 AM_V_OBJCXXLD = $(am__v_OBJCXXLD_$(V))
 am__v_OBJCXXLD_ = $(am__v_OBJCXXLD_$(AM_DEFAULT_VERBOSITY))
 am__v_OBJCXXLD_0 = @echo "  OBJCXXLD" $@;
-am__v_OBJCXXLD_1 = 
+am__v_OBJCXXLD_1 =
 SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(libbitcoin_cli_a_SOURCES) $(libbitcoin_common_a_SOURCES) \
 	$(libbitcoin_server_a_SOURCES) $(libbitcoin_util_a_SOURCES) \
@@ -1332,7 +1332,7 @@ AUTOCONF = ${SHELL} /root/UMBRA_v2/build-aux/missing autoconf
 AUTOHEADER = ${SHELL} /root/UMBRA_v2/build-aux/missing autoheader
 AUTOMAKE = ${SHELL} /root/UMBRA_v2/build-aux/missing automake-1.15
 AWK = gawk
-BDB_CPPFLAGS = 
+BDB_CPPFLAGS =
 BDB_LIBS = -ldb_cxx-4.8
 BITCOIN_CLI_NAME = umbra-cli
 BITCOIN_DAEMON_NAME = umbrad
@@ -1347,17 +1347,17 @@ BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt-s
 BOOST_SYSTEM_LIB = -lboost_system-mt-s
 BOOST_THREAD_LIB = -lboost_thread_win32-mt-s
 BOOST_UNIT_TEST_FRAMEWORK_LIB = -lboost_unit_test_framework-mt-s
-BREW = 
+BREW =
 BUILD_QT = qt
 BUILD_TEST = test
 BUILD_TEST_QT = test
 CC = /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../native/bin/ccache x86_64-w64-mingw32-gcc
 CCACHE = /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../native/bin/ccache
 CCDEPMODE = depmode=gcc3
-CFLAGS = -pipe -O2 
+CFLAGS = -pipe -O2
 CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 1
+CLIENT_VERSION_MAJOR = 2
 CLIENT_VERSION_MINOR = 0
 CLIENT_VERSION_REVISION = 0
 COMPARISON_TOOL_REORG_TESTS = 0
@@ -1365,7 +1365,7 @@ COPYRIGHT_YEAR = 2018
 CPP = x86_64-w64-mingw32-gcc -E
 CPPFILT = /usr/bin/x86_64-w64-mingw32-c++filt
 CPPFLAGS = -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
-CRYPTO_CFLAGS = 
+CRYPTO_CFLAGS =
 CRYPTO_LIBS = -lcrypto
 CXX = /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../native/bin/ccache x86_64-w64-mingw32-g++
 CXXCPP = x86_64-w64-mingw32-g++ -E
@@ -1375,52 +1375,52 @@ CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
 DLLTOOL = x86_64-w64-mingw32-dlltool
-DSYMUTIL = 
-DUMPBIN = 
-ECHO_C = 
+DSYMUTIL =
+DUMPBIN =
+ECHO_C =
 ECHO_N = -n
-ECHO_T = 
+ECHO_T =
 EGREP = /bin/grep -E
-EVENT_CFLAGS = 
+EVENT_CFLAGS =
 EVENT_LIBS = -levent
-EVENT_PTHREADS_CFLAGS = 
-EVENT_PTHREADS_LIBS = 
+EVENT_PTHREADS_CFLAGS =
+EVENT_PTHREADS_LIBS =
 EXEEXT = .exe
 FGREP = /bin/grep -F
 GCOV = /usr/bin/x86_64-w64-mingw32-gcov
-GENHTML = 
-GENISOIMAGE = 
+GENHTML =
+GENISOIMAGE =
 GIT = /usr/bin/git
 GREP = /bin/grep
 HAVE_CXX11 = 1
 HEXDUMP = /usr/bin/hexdump
-IMAGEMAGICK_CONVERT = 
+IMAGEMAGICK_CONVERT =
 INSTALL = /usr/bin/install -c
-INSTALLNAMETOOL = 
+INSTALLNAMETOOL =
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-JAVA = 
-JAVA_COMPARISON_TOOL = 
-LCOV = 
+JAVA =
+JAVA_COMPARISON_TOOL =
+LCOV =
 LD = /usr/bin/x86_64-w64-mingw32-ld
 LDFLAGS = -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat
 LEVELDB_CPPFLAGS =  $(am__append_1)
 LEVELDB_TARGET_FLAGS = TARGET_OS=OS_WINDOWS_CROSSCOMPILE
 LIBLEVELDB =  $(am__append_2)
 LIBMEMENV =  $(am__append_3)
-LIBOBJS = 
-LIBS = -lcrypto -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd 
+LIBOBJS =
+LIBS = -lcrypto -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_APP_LDFLAGS =  -all-static
-LIPO = 
+LIPO =
 LN_S = ln -s
 LRELEASE = /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../native/bin/lrelease
-LTLIBOBJS = 
-LT_SYS_LIBRARY_PATH = 
-LUPDATE = 
-MAINT = 
+LTLIBOBJS =
+LT_SYS_LIBRARY_PATH =
+LUPDATE =
+MAINT =
 MAKEINFO = ${SHELL} /root/UMBRA_v2/build-aux/missing makeinfo
 MAKENSIS = none
 MANIFEST_TOOL = :
@@ -1430,98 +1430,98 @@ MKDIR_P = /bin/mkdir -p
 MOC = /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../native/bin/moc
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
 NM = x86_64-w64-mingw32-nm
-NMEDIT = 
+NMEDIT =
 OBJCOPY = /usr/bin/x86_64-w64-mingw32-objcopy
 OBJCXX = x86_64-w64-mingw32-g++
 OBJCXXDEPMODE = depmode=gcc3
 OBJCXXFLAGS = -pipe -O2   -Wstack-protector -fstack-protector-all
 OBJDUMP = x86_64-w64-mingw32-objdump
 OBJEXT = o
-OTOOL = 
-OTOOL64 = 
+OTOOL =
+OTOOL64 =
 PACKAGE = umbra
 PACKAGE_BUGREPORT = www.umbra.io
 PACKAGE_NAME = Umbra Core
 PACKAGE_STRING = Umbra Core 2.0.0
 PACKAGE_TARNAME = umbra
-PACKAGE_URL = 
+PACKAGE_URL =
 PACKAGE_VERSION = 2.0.0
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config --static
 PKG_CONFIG_LIBDIR = /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib/pkgconfig
 PKG_CONFIG_PATH = /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../share/pkgconfig
-PORT = 
-PROTOBUF_CFLAGS = 
+PORT =
+PROTOBUF_CFLAGS =
 PROTOBUF_LIBS = -lprotobuf
 PROTOC = /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../native/bin/protoc
 PTHREAD_CC = x86_64-w64-mingw32-gcc
 PTHREAD_CFLAGS = -pthread
-PTHREAD_LIBS = 
+PTHREAD_LIBS =
 PYTHON = /usr/bin/python3
 PYTHONPATH = /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../native/lib/python/dist-packages:
-QR_CFLAGS = 
+QR_CFLAGS =
 QR_LIBS = -lqrencode
-QTPLATFORM_CFLAGS = 
-QTPLATFORM_LIBS = 
-QTPRINT_CFLAGS = 
-QTPRINT_LIBS = 
-QTXCBQPA_CFLAGS = 
-QTXCBQPA_LIBS = 
-QT_CFLAGS = 
-QT_DBUS_CFLAGS = 
-QT_DBUS_INCLUDES = 
+QTPLATFORM_CFLAGS =
+QTPLATFORM_LIBS =
+QTPRINT_CFLAGS =
+QTPRINT_LIBS =
+QTXCBQPA_CFLAGS =
+QTXCBQPA_LIBS =
+QT_CFLAGS =
+QT_DBUS_CFLAGS =
+QT_DBUS_INCLUDES =
 QT_DBUS_LIBS = -lQt5DBus -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib
 QT_INCLUDES = -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtCore -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtGui -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtTest -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtDBus
 QT_LDFLAGS =  -mwindows
 QT_LIBS = -lqwindows -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../plugins/platforms
-QT_PIE_FLAGS = 
+QT_PIE_FLAGS =
 QT_SELECT = qt5
-QT_TEST_CFLAGS = 
-QT_TEST_INCLUDES = 
+QT_TEST_CFLAGS =
+QT_TEST_INCLUDES =
 QT_TEST_LIBS = -lQt5Test -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib
 QT_TRANSLATION_DIR = /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../translations
 RANLIB = /usr/bin/x86_64-w64-mingw32-ranlib
 RCC = /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../native/bin/rcc
 READELF = /usr/bin/x86_64-w64-mingw32-readelf
 RELDFLAGS = -Wl,--exclude-libs,ALL
-RSVG_CONVERT = 
+RSVG_CONVERT =
 SED = /bin/sed
-SET_MAKE = 
+SET_MAKE =
 SHELL = /bin/bash
-SSL_CFLAGS = 
+SSL_CFLAGS =
 SSL_LIBS = -lssl
 STRIP = /usr/bin/x86_64-w64-mingw32-strip
-TESTDEFS = 
-TIFFCP = 
+TESTDEFS =
+TIFFCP =
 UIC = /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../native/bin/uic
-USE_QRCODE = 
-USE_UPNP = 
+USE_QRCODE =
+USE_UPNP =
 VERSION = 2.0.0
 WINDOWS_BITS = 64
 WINDRES = /usr/bin/x86_64-w64-mingw32-windres
-X11XCB_CFLAGS = 
-X11XCB_LIBS = 
-XGETTEXT = 
+X11XCB_CFLAGS =
+X11XCB_LIBS =
+XGETTEXT =
 ZMQ_CFLAGS =  -DZMQ_STATIC
 ZMQ_LIBS = -lzmq
 abs_builddir = /root/UMBRA_v2/src
 abs_srcdir = /root/UMBRA_v2/src
 abs_top_builddir = /root/UMBRA_v2
 abs_top_srcdir = /root/UMBRA_v2
-ac_ct_AR = 
-ac_ct_CC = 
-ac_ct_CXX = 
-ac_ct_DUMPBIN = 
-ac_ct_OBJCXX = 
+ac_ct_AR =
+ac_ct_CC =
+ac_ct_CXX =
+ac_ct_DUMPBIN =
+ac_ct_OBJCXX =
 am__include = include
 am__leading_dot = .
-am__quote = 
+am__quote =
 am__tar = $${TAR-tar} chof - "$$tardir"
 am__untar = $${TAR-tar} xf -
-ax_pthread_config = 
+ax_pthread_config =
 bindir = ${exec_prefix}/bin
 build = x86_64-pc-linux-gnu
-build_alias = 
+build_alias =
 build_cpu = x86_64
 build_os = linux-gnu
 build_vendor = pc
@@ -1557,7 +1557,7 @@ sharedstatedir = ${prefix}/com
 srcdir = .
 subdirs =  src/secp256k1
 sysconfdir = ${prefix}/etc
-target_alias = 
+target_alias =
 top_build_prefix = ../
 top_builddir = ..
 top_srcdir = ..
@@ -1586,7 +1586,7 @@ EXTRA_LIBRARIES = crypto/libbitcoin_crypto.a libbitcoin_util.a \
 	libbitcoin_cli.a $(am__append_5) $(am__append_6) \
 	$(am__append_24)
 #lib_LTLIBRARIES = libbitcoinconsensus.la
-LIBBITCOIN_CONSENSUS = 
+LIBBITCOIN_CONSENSUS =
 #LIBBITCOIN_CONSENSUS = libbitcoinconsensus.la
 # umbra core #
 BITCOIN_CORE_H = \
@@ -2505,7 +2505,7 @@ crypto/libbitcoin_crypto.a: $(crypto_libbitcoin_crypto_a_OBJECTS) $(crypto_libbi
 	$(AM_V_AR)$(crypto_libbitcoin_crypto_a_AR) crypto/libbitcoin_crypto.a $(crypto_libbitcoin_crypto_a_OBJECTS) $(crypto_libbitcoin_crypto_a_LIBADD)
 	$(AM_V_at)$(RANLIB) crypto/libbitcoin_crypto.a
 
-libbitcoin_cli.a: $(libbitcoin_cli_a_OBJECTS) $(libbitcoin_cli_a_DEPENDENCIES) $(EXTRA_libbitcoin_cli_a_DEPENDENCIES) 
+libbitcoin_cli.a: $(libbitcoin_cli_a_OBJECTS) $(libbitcoin_cli_a_DEPENDENCIES) $(EXTRA_libbitcoin_cli_a_DEPENDENCIES)
 	$(AM_V_at)-rm -f libbitcoin_cli.a
 	$(AM_V_AR)$(libbitcoin_cli_a_AR) libbitcoin_cli.a $(libbitcoin_cli_a_OBJECTS) $(libbitcoin_cli_a_LIBADD)
 	$(AM_V_at)$(RANLIB) libbitcoin_cli.a
@@ -2541,14 +2541,14 @@ script/libbitcoin_common_a-standard.$(OBJEXT): script/$(am__dirstamp) \
 script/libbitcoin_common_a-script_error.$(OBJEXT):  \
 	script/$(am__dirstamp) script/$(DEPDIR)/$(am__dirstamp)
 
-libbitcoin_common.a: $(libbitcoin_common_a_OBJECTS) $(libbitcoin_common_a_DEPENDENCIES) $(EXTRA_libbitcoin_common_a_DEPENDENCIES) 
+libbitcoin_common.a: $(libbitcoin_common_a_OBJECTS) $(libbitcoin_common_a_DEPENDENCIES) $(EXTRA_libbitcoin_common_a_DEPENDENCIES)
 	$(AM_V_at)-rm -f libbitcoin_common.a
 	$(AM_V_AR)$(libbitcoin_common_a_AR) libbitcoin_common.a $(libbitcoin_common_a_OBJECTS) $(libbitcoin_common_a_LIBADD)
 	$(AM_V_at)$(RANLIB) libbitcoin_common.a
 script/libbitcoin_server_a-sigcache.$(OBJEXT): script/$(am__dirstamp) \
 	script/$(DEPDIR)/$(am__dirstamp)
 
-libbitcoin_server.a: $(libbitcoin_server_a_OBJECTS) $(libbitcoin_server_a_DEPENDENCIES) $(EXTRA_libbitcoin_server_a_DEPENDENCIES) 
+libbitcoin_server.a: $(libbitcoin_server_a_OBJECTS) $(libbitcoin_server_a_DEPENDENCIES) $(EXTRA_libbitcoin_server_a_DEPENDENCIES)
 	$(AM_V_at)-rm -f libbitcoin_server.a
 	$(AM_V_AR)$(libbitcoin_server_a_AR) libbitcoin_server.a $(libbitcoin_server_a_OBJECTS) $(libbitcoin_server_a_LIBADD)
 	$(AM_V_at)$(RANLIB) libbitcoin_server.a
@@ -2569,7 +2569,7 @@ compat/libbitcoin_util_a-glibc_compat.$(OBJEXT):  \
 compat/libbitcoin_util_a-glibcxx_compat.$(OBJEXT):  \
 	compat/$(am__dirstamp) compat/$(DEPDIR)/$(am__dirstamp)
 
-libbitcoin_util.a: $(libbitcoin_util_a_OBJECTS) $(libbitcoin_util_a_DEPENDENCIES) $(EXTRA_libbitcoin_util_a_DEPENDENCIES) 
+libbitcoin_util.a: $(libbitcoin_util_a_OBJECTS) $(libbitcoin_util_a_DEPENDENCIES) $(EXTRA_libbitcoin_util_a_DEPENDENCIES)
 	$(AM_V_at)-rm -f libbitcoin_util.a
 	$(AM_V_AR)$(libbitcoin_util_a_AR) libbitcoin_util.a $(libbitcoin_util_a_OBJECTS) $(libbitcoin_util_a_LIBADD)
 	$(AM_V_at)$(RANLIB) libbitcoin_util.a
@@ -2577,7 +2577,7 @@ primitives/libbitcoin_wallet_a-zerocoin.$(OBJEXT):  \
 	primitives/$(am__dirstamp) \
 	primitives/$(DEPDIR)/$(am__dirstamp)
 
-libbitcoin_wallet.a: $(libbitcoin_wallet_a_OBJECTS) $(libbitcoin_wallet_a_DEPENDENCIES) $(EXTRA_libbitcoin_wallet_a_DEPENDENCIES) 
+libbitcoin_wallet.a: $(libbitcoin_wallet_a_OBJECTS) $(libbitcoin_wallet_a_DEPENDENCIES) $(EXTRA_libbitcoin_wallet_a_DEPENDENCIES)
 	$(AM_V_at)-rm -f libbitcoin_wallet.a
 	$(AM_V_AR)$(libbitcoin_wallet_a_AR) libbitcoin_wallet.a $(libbitcoin_wallet_a_OBJECTS) $(libbitcoin_wallet_a_LIBADD)
 	$(AM_V_at)$(RANLIB) libbitcoin_wallet.a
@@ -2594,7 +2594,7 @@ zmq/libbitcoin_zmq_a-zmqnotificationinterface.$(OBJEXT):  \
 zmq/libbitcoin_zmq_a-zmqpublishnotifier.$(OBJEXT):  \
 	zmq/$(am__dirstamp) zmq/$(DEPDIR)/$(am__dirstamp)
 
-libbitcoin_zmq.a: $(libbitcoin_zmq_a_OBJECTS) $(libbitcoin_zmq_a_DEPENDENCIES) $(EXTRA_libbitcoin_zmq_a_DEPENDENCIES) 
+libbitcoin_zmq.a: $(libbitcoin_zmq_a_OBJECTS) $(libbitcoin_zmq_a_DEPENDENCIES) $(EXTRA_libbitcoin_zmq_a_DEPENDENCIES)
 	$(AM_V_at)-rm -f libbitcoin_zmq.a
 	$(AM_V_AR)$(libbitcoin_zmq_a_AR) libbitcoin_zmq.a $(libbitcoin_zmq_a_OBJECTS) $(libbitcoin_zmq_a_LIBADD)
 	$(AM_V_at)$(RANLIB) libbitcoin_zmq.a
@@ -2936,7 +2936,7 @@ compat/libbitcoinconsensus_la-glibc_compat.lo: compat/$(am__dirstamp) \
 compat/libbitcoinconsensus_la-glibcxx_compat.lo:  \
 	compat/$(am__dirstamp) compat/$(DEPDIR)/$(am__dirstamp)
 
-libbitcoinconsensus.la: $(libbitcoinconsensus_la_OBJECTS) $(libbitcoinconsensus_la_DEPENDENCIES) $(EXTRA_libbitcoinconsensus_la_DEPENDENCIES) 
+libbitcoinconsensus.la: $(libbitcoinconsensus_la_OBJECTS) $(libbitcoinconsensus_la_DEPENDENCIES) $(EXTRA_libbitcoinconsensus_la_DEPENDENCIES)
 	$(AM_V_CXXLD)$(libbitcoinconsensus_la_LINK) $(am_libbitcoinconsensus_la_rpath) $(libbitcoinconsensus_la_OBJECTS) $(libbitcoinconsensus_la_LIBADD) $(LIBS)
 install-binPROGRAMS: $(bin_PROGRAMS)
 	@$(NORMAL_INSTALL)
@@ -3124,15 +3124,15 @@ test/test_umbra$(EXEEXT): $(test_test_umbra_OBJECTS) $(test_test_umbra_DEPENDENC
 	@rm -f test/test_umbra$(EXEEXT)
 	$(AM_V_CXXLD)$(test_test_umbra_LINK) $(test_test_umbra_OBJECTS) $(test_test_umbra_LDADD) $(LIBS)
 
-umbra-cli$(EXEEXT): $(umbra_cli_OBJECTS) $(umbra_cli_DEPENDENCIES) $(EXTRA_umbra_cli_DEPENDENCIES) 
+umbra-cli$(EXEEXT): $(umbra_cli_OBJECTS) $(umbra_cli_DEPENDENCIES) $(EXTRA_umbra_cli_DEPENDENCIES)
 	@rm -f umbra-cli$(EXEEXT)
 	$(AM_V_CXXLD)$(umbra_cli_LINK) $(umbra_cli_OBJECTS) $(umbra_cli_LDADD) $(LIBS)
 
-umbra-tx$(EXEEXT): $(umbra_tx_OBJECTS) $(umbra_tx_DEPENDENCIES) $(EXTRA_umbra_tx_DEPENDENCIES) 
+umbra-tx$(EXEEXT): $(umbra_tx_OBJECTS) $(umbra_tx_DEPENDENCIES) $(EXTRA_umbra_tx_DEPENDENCIES)
 	@rm -f umbra-tx$(EXEEXT)
 	$(AM_V_CXXLD)$(umbra_tx_LINK) $(umbra_tx_OBJECTS) $(umbra_tx_LDADD) $(LIBS)
 
-umbrad$(EXEEXT): $(umbrad_OBJECTS) $(umbrad_DEPENDENCIES) $(EXTRA_umbrad_DEPENDENCIES) 
+umbrad$(EXEEXT): $(umbrad_OBJECTS) $(umbrad_DEPENDENCIES) $(EXTRA_umbrad_DEPENDENCIES)
 	@rm -f umbrad$(EXEEXT)
 	$(AM_V_CXXLD)$(umbrad_LINK) $(umbrad_OBJECTS) $(umbrad_LDADD) $(LIBS)
 
@@ -8038,7 +8038,7 @@ check-TESTS:
 	log_list=`echo $$log_list`; trs_list=`echo $$trs_list`; \
 	$(MAKE) $(AM_MAKEFLAGS) $(TEST_SUITE_LOG) TEST_LOGS="$$log_list"; \
 	exit $$?;
-recheck: all 
+recheck: all
 	@test -z "$(TEST_SUITE_LOG)" || rm -f $(TEST_SUITE_LOG)
 	@set +e; $(am__set_TESTS_bases); \
 	bases=`for i in $$bases; do echo $$i; done \
