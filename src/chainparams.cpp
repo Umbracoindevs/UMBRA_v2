@@ -119,7 +119,7 @@ public:
         nModifierUpdateBlock = 999999999;
         nZerocoinStartHeight = 5120000;
         nAccumulatorStartHeight = 1;
-        nZerocoinStartTime = 1672117718;
+        nZerocoinStartTime = 1545199849;
         nBlockEnforceSerialRange = 1;
         nBlockRecalculateAccumulators = ~1;
         nBlockFirstFraudulent = ~1;
