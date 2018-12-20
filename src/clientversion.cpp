@@ -19,7 +19,7 @@ const std::string CLIENT_NAME("Umbra Core");
 /**
  * Client version number
  */
-#define CLIENT_VERSION_SUFFIX ("v2.0")
+#define CLIENT_VERSION_SUFFIX ("")
 
 
 /**
