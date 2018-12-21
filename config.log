@@ -44,11 +44,11 @@ PATH: /snap/bin
 
 configure:2827: loading site script /root/UMBRA_v2/depends/x86_64-w64-mingw32/share/config.site
 | depends_prefix="`dirname ${ac_site_file}`/.."
-|
+| 
 | cross_compiling=maybe
 | host_alias=x86_64-w64-mingw32
 | ac_tool_prefix=${host_alias}-
-|
+| 
 | if test -z $with_boost; then
 |   with_boost=$depends_prefix
 | fi
@@ -64,25 +64,25 @@ configure:2827: loading site script /root/UMBRA_v2/depends/x86_64-w64-mingw32/sh
 | if test -z $with_protoc_bindir; then
 |   with_protoc_bindir=$depends_prefix/native/bin
 | fi
-|
-|
+| 
+| 
 | if test -z $enable_wallet && test -n ""; then
 |   enable_wallet=no
 | fi
-|
+| 
 | if test -z $with_miniupnpc && test -n ""; then
 |   with_miniupnpc=no
 | fi
-|
+| 
 | if test -z $with_gui && test -n ""; then
 |   with_gui=no
 | fi
-|
+| 
 | if test xmingw32 = xdarwin; then
 |   BREW=no
 |   PORT=no
 | fi
-|
+| 
 | if test xmingw32 = xmingw32; then
 |   if test -z $with_qt_incdir; then
 |     with_qt_incdir=$depends_prefix/include
@@ -91,45 +91,45 @@ configure:2827: loading site script /root/UMBRA_v2/depends/x86_64-w64-mingw32/sh
 |     with_qt_libdir=$depends_prefix/lib
 |   fi
 | fi
-|
+| 
 | PATH=$depends_prefix/native/bin:$PATH
 | PKG_CONFIG="`which pkg-config` --static"
-|
+| 
 | # These two need to remain exported because pkg-config does not see them
 | # otherwise. That means they must be unexported at the end of configure.ac to
 | # avoid ruining the cache. Sigh.
-|
+| 
 | export PKG_CONFIG_LIBDIR=$depends_prefix/lib/pkgconfig
 | export PKG_CONFIG_PATH=$depends_prefix/share/pkgconfig
-|
+| 
 | CPPFLAGS="-I$depends_prefix/include/ $CPPFLAGS"
 | LDFLAGS="-L$depends_prefix/lib $LDFLAGS"
-|
+| 
 | CC="x86_64-w64-mingw32-gcc"
 | CXX="x86_64-w64-mingw32-g++"
 | OBJC="${CC}"
 | CCACHE=$depends_prefix/native/bin/ccache
 | PYTHONPATH=$depends_prefix/native/lib/python/dist-packages:$PYTHONPATH
-|
+| 
 | if test -n "x86_64-w64-mingw32-ar"; then
 |   AR=x86_64-w64-mingw32-ar
 |   ac_cv_path_ac_pt_AR=${AR}
 | fi
-|
+| 
 | if test -n "x86_64-w64-mingw32-ranlib"; then
 |   RANLIB=x86_64-w64-mingw32-ranlib
 |   ac_cv_path_ac_pt_RANLIB=${RANLIB}
 | fi
-|
+| 
 | if test -n "x86_64-w64-mingw32-nm"; then
 |   NM=x86_64-w64-mingw32-nm
 |   ac_cv_path_ac_pt_NM=${NM}
 | fi
-|
+| 
 | if test -n ""; then
 |   enable_reduce_exports=no
 | fi
-|
+| 
 | if test -n "-pipe -O2"; then
 |   CFLAGS="-pipe -O2 $CFLAGS"
 | fi
@@ -181,7 +181,7 @@ COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/lto-wrapper
 Target: x86_64-w64-mingw32
 Configured with: ../../src/configure --build=x86_64-linux-gnu --prefix=/usr --includedir='/usr/include' --mandir='/usr/share/man' --infodir='/usr/share/info' --sysconfdir=/etc --localstatedir=/var --disable-silent-rules --libdir='/usr/lib/x86_64-linux-gnu' --libexecdir='/usr/lib/x86_64-linux-gnu' --disable-maintainer-mode --disable-dependency-tracking --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --with-headers=/usr/x86_64-w64-mingw32/include --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libgomp --enable-languages=c,c++,fortran,objc,obj-c++,ada --enable-lto --with-plugin-ld --enable-threads=posix --program-suffix=-posix --program-prefix=x86_64-w64-mingw32- --target=x86_64-w64-mingw32 --with-as=/usr/bin/x86_64-w64-mingw32-as --with-ld=/usr/bin/x86_64-w64-mingw32-ld --enable-libatomic --enable-libstdcxx-filesystem-ts=yes
 Thread model: posix
-gcc version 7.3-posix 20180312 (GCC)
+gcc version 7.3-posix 20180312 (GCC) 
 configure:3812: $? = 0
 configure:3801: x86_64-w64-mingw32-g++ -V >&5
 x86_64-w64-mingw32-g++: error: unrecognized command line option '-V'
@@ -247,7 +247,7 @@ COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/lto-wrapper
 Target: x86_64-w64-mingw32
 Configured with: ../../src/configure --build=x86_64-linux-gnu --prefix=/usr --includedir='/usr/include' --mandir='/usr/share/man' --infodir='/usr/share/info' --sysconfdir=/etc --localstatedir=/var --disable-silent-rules --libdir='/usr/lib/x86_64-linux-gnu' --libexecdir='/usr/lib/x86_64-linux-gnu' --disable-maintainer-mode --disable-dependency-tracking --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --with-headers=/usr/x86_64-w64-mingw32/include --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libgomp --enable-languages=c,c++,fortran,objc,obj-c++,ada --enable-lto --with-plugin-ld --enable-threads=posix --program-suffix=-posix --program-prefix=x86_64-w64-mingw32- --target=x86_64-w64-mingw32 --with-as=/usr/bin/x86_64-w64-mingw32-as --with-ld=/usr/bin/x86_64-w64-mingw32-ld --enable-libatomic --enable-libstdcxx-filesystem-ts=yes
 Thread model: posix
-gcc version 7.3-posix 20180312 (GCC)
+gcc version 7.3-posix 20180312 (GCC) 
 configure:5175: $? = 0
 configure:5164: x86_64-w64-mingw32-g++ -V >&5
 x86_64-w64-mingw32-g++: error: unrecognized command line option '-V'
@@ -273,14 +273,14 @@ configure: failed program was:
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
-|
+| 
 | int
 | main ()
 | {
 | #ifndef __GNUC__
 |        choke me
 | #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -299,11 +299,11 @@ configure: failed program was:
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -320,11 +320,11 @@ configure: failed program was:
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -341,11 +341,11 @@ configure: failed program was:
 | #define PACKAGE_URL ""
 | #define HAVE_CXX11 1
 | /* end confdefs.h.  */
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -371,7 +371,7 @@ COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-w64-mingw32/7.3-win32/lto-wrapper
 Target: x86_64-w64-mingw32
 Configured with: ../../src/configure --build=x86_64-linux-gnu --prefix=/usr --includedir='/usr/include' --mandir='/usr/share/man' --infodir='/usr/share/info' --sysconfdir=/etc --localstatedir=/var --disable-silent-rules --libdir='/usr/lib/x86_64-linux-gnu' --libexecdir='/usr/lib/x86_64-linux-gnu' --disable-maintainer-mode --disable-dependency-tracking --prefix=/usr --enable-shared --enable-static --disable-multilib --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --libdir=/usr/lib --enable-libstdcxx-time=yes --with-tune=generic --with-headers=/usr/x86_64-w64-mingw32/include --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libgomp --enable-languages=c,c++,fortran,objc,obj-c++,ada --enable-lto --with-plugin-ld --enable-threads=win32 --program-suffix=-win32 --program-prefix=x86_64-w64-mingw32- --target=x86_64-w64-mingw32 --with-as=/usr/bin/x86_64-w64-mingw32-as --with-ld=/usr/bin/x86_64-w64-mingw32-ld --enable-libatomic --enable-libstdcxx-filesystem-ts=yes
 Thread model: win32
-gcc version 7.3-win32 20180312 (GCC)
+gcc version 7.3-win32 20180312 (GCC) 
 configure:5846: $? = 0
 configure:5835: x86_64-w64-mingw32-gcc -V >&5
 x86_64-w64-mingw32-gcc: error: unrecognized command line option '-V'
@@ -627,7 +627,7 @@ configure: failed program was:
 | #ifdef HAVE_UNISTD_H
 | # include <unistd.h>
 | #endif
-|
+| 
 | #include <dlfcn.h>
 configure:9841: result: no
 configure:10106: checking for objdir
@@ -937,7 +937,7 @@ configure: failed program was:
 | 	       not a universal capable compiler
 | 	     #endif
 | 	     typedef int dummy;
-|
+| 
 configure:20526: x86_64-w64-mingw32-g++ -c -pipe -O2  -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB conftest.cpp >&5
 configure:20526: $? = 0
 configure:20544: x86_64-w64-mingw32-g++ -c -pipe -O2  -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB conftest.cpp >&5
@@ -988,14 +988,14 @@ configure: failed program was:
 | /* end confdefs.h.  */
 | #include <sys/types.h>
 | 		#include <sys/param.h>
-|
+| 
 | int
 | main ()
 | {
 | #if BYTE_ORDER != BIG_ENDIAN
 | 		 not big endian
 | 		#endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -1449,7 +1449,7 @@ configure: failed program was:
 | int
 | main ()
 | {
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -1553,7 +1553,7 @@ configure: failed program was:
 |   (void) strerror_r;
 | #endif
 | #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -1610,20 +1610,20 @@ configure: failed program was:
 | /* Define strerror_r to an innocuous variant, in case <limits.h> declares strerror_r.
 |    For example, HP-UX 11i <limits.h> declares gettimeofday.  */
 | #define strerror_r innocuous_strerror_r
-|
+| 
 | /* System header to define __stub macros and hopefully few prototypes,
 |     which can conflict with char strerror_r (); below.
 |     Prefer <limits.h> to <assert.h> if __STDC__ is defined, since
 |     <limits.h> exists even on freestanding compilers.  */
-|
+| 
 | #ifdef __STDC__
 | # include <limits.h>
 | #else
 | # include <assert.h>
 | #endif
-|
+| 
 | #undef strerror_r
-|
+| 
 | /* Override any GCC internal prototype to avoid an error.
 |    Use char because int might match the return type of a GCC
 |    builtin and then its argument prototype would still apply.  */
@@ -1637,7 +1637,7 @@ configure: failed program was:
 | #if defined __stub_strerror_r || defined __stub___strerror_r
 | choke me
 | #endif
-|
+| 
 | int
 | main ()
 | {
@@ -1698,11 +1698,11 @@ configure: failed program was:
 | #define _FILE_OFFSET_BITS 64
 | #define HAVE_DECL_STRERROR_R 0
 | /* end confdefs.h.  */
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -1796,11 +1796,11 @@ configure: failed program was:
 | #define HAVE_FUNC_ATTRIBUTE_DLLEXPORT 1
 | #define HAVE_FUNC_ATTRIBUTE_DLLIMPORT 1
 | /* end confdefs.h.  */
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -1858,11 +1858,11 @@ configure: failed program was:
 | #define HAVE_FUNC_ATTRIBUTE_DLLEXPORT 1
 | #define HAVE_FUNC_ATTRIBUTE_DLLIMPORT 1
 | /* end confdefs.h.  */
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -2421,7 +2421,7 @@ configure: failed program was:
 | #define HAVE_SYS_TYPES_H 1
 | #define HAVE_SYS_STAT_H 1
 | /* end confdefs.h.  */
-|
+| 
 | /* Override any GCC internal prototype to avoid an error.
 |    Use char because int might match the return type of a GCC
 |    builtin and then its argument prototype would still apply.  */
@@ -2494,7 +2494,7 @@ configure: failed program was:
 | #define HAVE_SYS_TYPES_H 1
 | #define HAVE_SYS_STAT_H 1
 | /* end confdefs.h.  */
-|
+| 
 | /* Override any GCC internal prototype to avoid an error.
 |    Use char because int might match the return type of a GCC
 |    builtin and then its argument prototype would still apply.  */
@@ -2584,7 +2584,7 @@ configure: failed program was:
 | #if HAVE_ENDIAN_H
 |                  #include <endian.h>
 |                  #endif
-|
+| 
 | int
 | main ()
 | {
@@ -2595,7 +2595,7 @@ configure: failed program was:
 |   (void) le32toh;
 | #endif
 | #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -2667,7 +2667,7 @@ configure: failed program was:
 | #if HAVE_ENDIAN_H
 |                  #include <endian.h>
 |                  #endif
-|
+| 
 | int
 | main ()
 | {
@@ -2678,7 +2678,7 @@ configure: failed program was:
 |   (void) le64toh;
 | #endif
 | #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -2751,7 +2751,7 @@ configure: failed program was:
 | #if HAVE_ENDIAN_H
 |                  #include <endian.h>
 |                  #endif
-|
+| 
 | int
 | main ()
 | {
@@ -2762,7 +2762,7 @@ configure: failed program was:
 |   (void) htole32;
 | #endif
 | #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -2836,7 +2836,7 @@ configure: failed program was:
 | #if HAVE_ENDIAN_H
 |                  #include <endian.h>
 |                  #endif
-|
+| 
 | int
 | main ()
 | {
@@ -2847,7 +2847,7 @@ configure: failed program was:
 |   (void) htole64;
 | #endif
 | #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -2922,7 +2922,7 @@ configure: failed program was:
 | #if HAVE_ENDIAN_H
 |                  #include <endian.h>
 |                  #endif
-|
+| 
 | int
 | main ()
 | {
@@ -2933,7 +2933,7 @@ configure: failed program was:
 |   (void) be32toh;
 | #endif
 | #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -3009,7 +3009,7 @@ configure: failed program was:
 | #if HAVE_ENDIAN_H
 |                  #include <endian.h>
 |                  #endif
-|
+| 
 | int
 | main ()
 | {
@@ -3020,7 +3020,7 @@ configure: failed program was:
 |   (void) be64toh;
 | #endif
 | #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -3097,7 +3097,7 @@ configure: failed program was:
 | #if HAVE_ENDIAN_H
 |                  #include <endian.h>
 |                  #endif
-|
+| 
 | int
 | main ()
 | {
@@ -3108,7 +3108,7 @@ configure: failed program was:
 |   (void) htobe32;
 | #endif
 | #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -3186,7 +3186,7 @@ configure: failed program was:
 | #if HAVE_ENDIAN_H
 |                  #include <endian.h>
 |                  #endif
-|
+| 
 | int
 | main ()
 | {
@@ -3197,7 +3197,7 @@ configure: failed program was:
 |   (void) htobe64;
 | #endif
 | #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -3366,17 +3366,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <bdb4.8/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -3451,17 +3451,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <libdb4.8/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -3536,17 +3536,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <db4.8/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -3621,17 +3621,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <bdb48/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -3706,17 +3706,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <libdb48/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -3791,17 +3791,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <db48/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -3876,17 +3876,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <bdb4/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -3961,17 +3961,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <libdb4/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -4046,17 +4046,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <db4/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -4131,17 +4131,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <bdb5/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -4216,17 +4216,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <libdb5/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -4301,17 +4301,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <db5/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -4386,17 +4386,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <bdb/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -4471,17 +4471,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <libdb/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -4556,17 +4556,17 @@ configure: failed program was:
 | #define HAVE_DECL_HTOBE64 0
 | #define HAVE_VISIBILITY_ATTRIBUTE 1
 | /* end confdefs.h.  */
-|
+| 
 |       #include <db/db_cxx.h>
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |       #if !((DB_VERSION_MAJOR == 4 && DB_VERSION_MINOR >= 8) || DB_VERSION_MAJOR > 4)
 |         #error "failed to find bdb 4.8+"
 |       #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -4667,11 +4667,11 @@ configure:23510: checking for main in -limm32
 configure:23529: x86_64-w64-mingw32-g++ -o conftest.exe  -pipe -O2   -Wstack-protector -fstack-protector-all -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtCore -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtGui -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtTest -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -limm32   -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib >&5
 configure:23529: $? = 0
 configure:23538: result: yes
-configure:23574: checking for main in -lz
+configure:23574: checking for main in -lz 
 configure:23593: x86_64-w64-mingw32-g++ -o conftest.exe  -pipe -O2   -Wstack-protector -fstack-protector-all -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtCore -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtGui -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtTest -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -lz   -limm32  -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib >&5
 configure:23593: $? = 0
 configure:23603: result: yes
-configure:23625: checking for library containing png_error
+configure:23625: checking for library containing png_error 
 configure:23656: x86_64-w64-mingw32-g++ -o conftest.exe  -pipe -O2   -Wstack-protector -fstack-protector-all -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtCore -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtGui -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtTest -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -lz  -limm32  -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib >&5
 /tmp/ccqPfWyr.o:conftest.cpp:(.text.startup+0x1c): undefined reference to `png_error'
 collect2: error: ld returned 1 exit status
@@ -4747,7 +4747,7 @@ configure: failed program was:
 | #define HAVE_LIBIMM32 1
 | #define HAVE_LIBZ_ 1
 | /* end confdefs.h.  */
-|
+| 
 | /* Override any GCC internal prototype to avoid an error.
 |    Use char because int might match the return type of a GCC
 |    builtin and then its argument prototype would still apply.  */
@@ -4765,7 +4765,7 @@ configure: failed program was:
 configure:23656: x86_64-w64-mingw32-g++ -o conftest.exe  -pipe -O2   -Wstack-protector -fstack-protector-all -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtCore -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtGui -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtTest -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -lqtpng  -lz  -limm32  -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib >&5
 configure:23656: $? = 0
 configure:23673: result: -lqtpng
-configure:23692: checking for library containing jpeg_create_decompress
+configure:23692: checking for library containing jpeg_create_decompress 
 configure:23723: x86_64-w64-mingw32-g++ -o conftest.exe  -pipe -O2   -Wstack-protector -fstack-protector-all -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtCore -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtGui -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtTest -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -lqtpng -lz  -limm32  -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib >&5
 /tmp/cc4VUxyv.o:conftest.cpp:(.text.startup+0x1c): undefined reference to `jpeg_create_decompress'
 collect2: error: ld returned 1 exit status
@@ -4841,7 +4841,7 @@ configure: failed program was:
 | #define HAVE_LIBIMM32 1
 | #define HAVE_LIBZ_ 1
 | /* end confdefs.h.  */
-|
+| 
 | /* Override any GCC internal prototype to avoid an error.
 |    Use char because int might match the return type of a GCC
 |    builtin and then its argument prototype would still apply.  */
@@ -4931,7 +4931,7 @@ configure: failed program was:
 | #define HAVE_LIBIMM32 1
 | #define HAVE_LIBZ_ 1
 | /* end confdefs.h.  */
-|
+| 
 | /* Override any GCC internal prototype to avoid an error.
 |    Use char because int might match the return type of a GCC
 |    builtin and then its argument prototype would still apply.  */
@@ -5021,7 +5021,7 @@ configure: failed program was:
 | #define HAVE_LIBIMM32 1
 | #define HAVE_LIBZ_ 1
 | /* end confdefs.h.  */
-|
+| 
 | /* Override any GCC internal prototype to avoid an error.
 |    Use char because int might match the return type of a GCC
 |    builtin and then its argument prototype would still apply.  */
@@ -5114,7 +5114,7 @@ configure: failed program was:
 | #define HAVE_LIBIMM32 1
 | #define HAVE_LIBZ_ 1
 | /* end confdefs.h.  */
-|
+| 
 | /* Override any GCC internal prototype to avoid an error.
 |    Use char because int might match the return type of a GCC
 |    builtin and then its argument prototype would still apply.  */
@@ -5132,7 +5132,7 @@ configure: failed program was:
 configure:23790: x86_64-w64-mingw32-g++ -o conftest.exe  -pipe -O2   -Wstack-protector -fstack-protector-all -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtCore -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtGui -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtTest -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -lqtpcre  -lqtpng -lz  -limm32  -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib >&5
 configure:23790: $? = 0
 configure:23807: result: -lqtpcre
-configure:23826: checking for library containing hb_ot_tags_from_script
+configure:23826: checking for library containing hb_ot_tags_from_script 
 configure:23857: x86_64-w64-mingw32-g++ -o conftest.exe  -pipe -O2   -Wstack-protector -fstack-protector-all -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtCore -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtGui -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtTest -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -lqtpcre -lqtpng -lz  -limm32  -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib >&5
 /tmp/cctR7ncK.o:conftest.cpp:(.text.startup+0x1c): undefined reference to `hb_ot_tags_from_script'
 collect2: error: ld returned 1 exit status
@@ -5208,7 +5208,7 @@ configure: failed program was:
 | #define HAVE_LIBIMM32 1
 | #define HAVE_LIBZ_ 1
 | /* end confdefs.h.  */
-|
+| 
 | /* Override any GCC internal prototype to avoid an error.
 |    Use char because int might match the return type of a GCC
 |    builtin and then its argument prototype would still apply.  */
@@ -5226,11 +5226,11 @@ configure: failed program was:
 configure:23857: x86_64-w64-mingw32-g++ -o conftest.exe  -pipe -O2   -Wstack-protector -fstack-protector-all -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtCore -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtGui -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtTest -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -lqtharfbuzzng  -lqtpcre -lqtpng -lz  -limm32  -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib >&5
 configure:23857: $? = 0
 configure:23874: result: -lqtharfbuzzng
-configure:23894: checking for main in -lQt5Core
+configure:23894: checking for main in -lQt5Core   
 configure:23913: x86_64-w64-mingw32-g++ -o conftest.exe  -pipe -O2   -Wstack-protector -fstack-protector-all -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtCore -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtGui -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtTest -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -lQt5Core     -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib >&5
 configure:23913: $? = 0
 configure:23923: result: yes
-configure:23956: checking for main in -lQt5Gui
+configure:23956: checking for main in -lQt5Gui    
 configure:23975: x86_64-w64-mingw32-g++ -o conftest.exe  -pipe -O2   -Wstack-protector -fstack-protector-all -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtCore -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtGui -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtTest -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -lQt5Gui      -lQt5Core    -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib >&5
 configure:23975: $? = 0
 configure:23985: result: yes
@@ -5376,11 +5376,11 @@ configure: failed program was:
 | int
 | main ()
 | {
-|
+| 
 |           #if QT_VERSION >= 0x050400
 |           choke;
 |           #endif
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -5389,10 +5389,10 @@ configure:24892: checking for static Qt plugins: -lqwindows
 configure:24910: x86_64-w64-mingw32-g++ -o conftest.exe  -pipe -O2   -Wstack-protector -fstack-protector-all -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtCore -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtGui -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtTest -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -lqwindows -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzzng -lqtpcre -lqtpng -lz  -limm32  -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../plugins/platforms -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
 conftest.cpp:80:0: warning: "QT_STATICPLUGIN" redefined
      #define QT_STATICPLUGIN
-
+ 
 conftest.cpp:77:0: note: this is the location of the previous definition
  #define QT_STATICPLUGIN 1
-
+ 
 configure:24910: $? = 0
 configure:24911: result: yes
 configure:25136: checking whether -fPIE can be used with this Qt config
@@ -5607,12 +5607,12 @@ configure: failed program was:
 | #define HAVE_BOOST_CHRONO /**/
 | #define HAVE_BOOST_UNIT_TEST_FRAMEWORK /**/
 | /* end confdefs.h.  */
-|
+| 
 |        #define BOOST_TEST_DYN_LINK
 |        #define BOOST_TEST_MAIN
 |         #include <boost/test/unit_test.hpp>
-|
-|
+| 
+| 
 configure:27801: result: no
 configure:27841: x86_64-w64-mingw32-g++ -o conftest.exe -pipe -O2   -Wstack-protector -fstack-protector-all -fvisibility=hidden -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5 -mthreads -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib -lboost_system-mt-s -lboost_filesystem-mt-s -lboost_program_options-mt-s -lboost_thread_win32-mt-s -lboost_chrono-mt-s -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
 configure:27841: $? = 0
@@ -5672,7 +5672,7 @@ configure:28658: checking for zmq_ctx_shutdown in -lzmq
 configure:28683: x86_64-w64-mingw32-g++ -o conftest.exe -pipe -O2   -Wstack-protector -fstack-protector-all -fvisibility=hidden -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -lzmq  -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
 configure:28683: $? = 0
 configure:28692: result: yes
-configure:28725: checking for main in -lprotobuf
+configure:28725: checking for main in -lprotobuf 
 configure:28744: x86_64-w64-mingw32-g++ -o conftest.exe -pipe -O2   -Wstack-protector -fstack-protector-all -fvisibility=hidden -I/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5 -L/root/UMBRA_v2/depends/x86_64-w64-mingw32/share/../lib   -Wl,--dynamicbase -Wl,--nxcompat conftest.cpp -lprotobuf   -lQt5PlatformSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd  >&5
 configure:28744: $? = 0
 configure:28754: result: yes
@@ -5810,11 +5810,11 @@ configure: failed program was:
 | #define ENABLE_ZMQ 1
 | #define HAVE_LIBCRYPTO 1
 | /* end confdefs.h.  */
-|
+| 
 | int
 | main ()
 | {
-|
+| 
 |   ;
 |   return 0;
 | }
@@ -5847,11 +5847,11 @@ configure:29708: creating ./config.status
 This file was extended by Umbra Core config.status 2.0.0, which was
 generated by GNU Autoconf 2.69.  Invocation command line was
 
-  CONFIG_FILES    =
-  CONFIG_HEADERS  =
-  CONFIG_LINKS    =
-  CONFIG_COMMANDS =
-  $ ./config.status
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status 
 
 on umbra
 
@@ -6232,7 +6232,7 @@ CCDEPMODE='depmode=gcc3'
 CFLAGS='-pipe -O2 '
 CLIENT_VERSION_BUILD='0'
 CLIENT_VERSION_IS_RELEASE='true'
-CLIENT_VERSION_MAJOR='2'
+CLIENT_VERSION_MAJOR='1'
 CLIENT_VERSION_MINOR='0'
 CLIENT_VERSION_REVISION='0'
 COMPARISON_TOOL_REORG_TESTS='0'
@@ -6565,7 +6565,7 @@ target_alias=''
 #define ENABLE_WALLET 1
 #define USE_UPNP 0
 #define USE_QRCODE 1
-#define CLIENT_VERSION_MAJOR 2
+#define CLIENT_VERSION_MAJOR 1
 #define CLIENT_VERSION_MINOR 0
 #define CLIENT_VERSION_REVISION 0
 #define CLIENT_VERSION_BUILD 0
