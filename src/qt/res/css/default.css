@@ -388,12 +388,12 @@ margin:0px 18px 0px 18px;
 
 
 QScrollBar::handle:vertical { /* Scroll Bar Slider - vertical */
-background:#e0e0e0;
+background:#f93131;
 min-height:10px;
 }
 
 QScrollBar::handle:horizontal { /* Scroll Bar Slider - horizontal */
-background:#e0e0e0;
+background:#f93131;
 min-width:10px;
 }
 
@@ -409,7 +409,7 @@ height:16px;
 }
 
 QScrollBar::add-line:vertical:pressed, QScrollBar::sub-line:vertical:pressed, QScrollBar::add-line:horizontal:pressed, QScrollBar::sub-line:horizontal:pressed {
-background-color:#e0e0e0;
+background-color:#f93131;
 }
 
 QScrollBar::sub-line:vertical { /* Vertical - top button position */
@@ -1176,7 +1176,7 @@ QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText { /* Available zBRKS Labe
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#000000;
-color:#fff;
+color:#ffffff;
 margin-right:5px;
 padding-right:5px;
 font-weight:bold;
@@ -1188,7 +1188,7 @@ QWidget .QFrame#frame_3 .QLabel#labelLockedBalance { /* Available zBRKS Balance 
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:normal;
-color:#fff;
+color:#ffffff;
 margin-left:0px;
 }
 
@@ -1196,7 +1196,7 @@ QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalanceText { /* Available zBRKS La
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#000000;
-color:#fff;
+color:#ffffff;
 margin-right:5px;
 padding-right:5px;
 font-weight:bold;
@@ -1208,7 +1208,7 @@ QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalance { /* Available zBRKS Balanc
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:normal;
-color:#fff;
+color:#ffffff;
 margin-left:0px;
 }
 
@@ -1216,7 +1216,7 @@ QWidget .QFrame#frame_3 .QLabel#labelTotalTextz { /* Available total Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#000000;
-color:#fff;
+color:#ffffff;
 margin-right:5px;
 padding-right:5px;
 font-weight:bold;
@@ -1228,7 +1228,7 @@ QWidget .QFrame#frame_3 .QLabel#labelTotalz { /* Available total Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:bold;
-color:#fff;
+color:#ffffff;
 margin-left:0px;
 }
 
@@ -1242,12 +1242,12 @@ margin-left:0;
 margin-top:0;
 background-image: url(':/images/armageddon_logo_horizontal');
 background-repeat:none;
-color:#fff;
+color:#fffff;
 }
 
 QWidget .QFrame#frame_2 .QLabel#label_4 { /* Recent Transactions Label */
 min-width:180px;
-color:#fff;
+color:#ffffff;
 margin-left:67px;
 margin-top:83px;
 margin-right:5px;
@@ -1272,7 +1272,7 @@ font-size:12px;
 max-width:369px;
 margin-top:12px;
 margin-left:0px;
-color: #fff; /* CSS Voodoo - set to -66px to hide default transaction icons */
+color: #ffffff; /* CSS Voodoo - set to -66px to hide default transaction icons */
 }
 
 /**************************** SEND DIALOG ***********************************************/
@@ -1556,7 +1556,7 @@ color:transparent;
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget { /* Coin Control Widget Container */
 outline:0;
 background-color:#000000;
-border:1px solid #fff;
+border:1px solid #000000;
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item {
