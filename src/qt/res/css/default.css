@@ -1560,10 +1560,12 @@ border:1px solid #000000;
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item {
+background-color:#000000;
+color:#fff;
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item:selected { /* Coin Control Item (selected) */
-background-color:#000000;
+background-color:##e7240f;
 color:#fff;
 }
 
