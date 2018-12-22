@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2017 The Umbra developers
+// Copyright (c) 2018 The Umbra developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -16,7 +16,6 @@
 
 //! These need to be macros, as clientversion.cpp's and umbra*-res.rc's voodoo requires it
 #define CLIENT_VERSION_MAJOR 2
-#define CLIENT_VERSION_MAJOR 1
 #define CLIENT_VERSION_MINOR 0
 #define CLIENT_VERSION_REVISION 0
 #define CLIENT_VERSION_BUILD 0
@@ -40,7 +39,7 @@
 #define DO_STRINGIZE(X) #X
 
 //! Copyright string used in Windows .rc files
-#define COPYRIGHT_STR "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin Core Developers, 2014-" STRINGIZE(COPYRIGHT_YEAR) " The Dash Core Developers, 2015-" STRINGIZE(COPYRIGHT_YEAR) " The PIVX Core Developers, 2017-" STRINGIZE(COPYRIGHT_YEAR) " The Umbra Core Developers"
+#define COPYRIGHT_STR "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin Core Developers, 2014-" STRINGIZE(COPYRIGHT_YEAR) " The Dash Core Developers, 2015-" STRINGIZE(COPYRIGHT_YEAR) " The PIVX Core Developers, 2017-" STRINGIZE(COPYRIGHT_YEAR) " The Umbra Core Developers 2018"
 
 /**
  * umbrad-res.rc includes this file, but it cannot cope with real c++ code.

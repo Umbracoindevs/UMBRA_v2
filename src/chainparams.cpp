@@ -54,29 +54,29 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     60, uint256("00000227cd58961c057ff50febbc93dd30fbbf816600fad648e5334df0fcb7f7"));
+    (     , uint256(""));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1545199849, // * UNIX timestamp of last checkpoint block
+    1545453420, // * UNIX timestamp of last checkpoint block
     0,      // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     1000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x001"));
+    boost::assign::map_list_of(0, uint256(""));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1740710,
+    1545453420,
     0,
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x001"));
+    boost::assign::map_list_of(0, uint256(""));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1454124731,
+    1545453420,
     0,
     100};
 
@@ -111,11 +111,11 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 120;
         nTargetSpacing = 120;
-        nMaturity = 15;
+        nMaturity = 30;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 21000000 * COIN;
+        nMaxMoneyOut = 24100000 * COIN;
 
-        nLastPOWBlock = 400;
+        nLastPOWBlock = 200;
         nModifierUpdateBlock = 999999999;
         nZerocoinStartHeight = 5120000;
         nAccumulatorStartHeight = 1;
@@ -124,7 +124,7 @@ public:
         nBlockRecalculateAccumulators = ~1;
         nBlockFirstFraudulent = ~1;
         nBlockLastGoodCheckpoint = ~1;
-        const char* pszTimestamp = "Elon Musk: 'I want to be clear — I do not respect the SEC'- Business Insider";
+        const char* pszTimestamp = "Elon Musk I want to be clear — I do not respect the SEC Rockets Oranges and David Hasselhoff";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -135,13 +135,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1544448407;
-        genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 7338351;
+        genesis.nTime = 1545453420;
+        genesis.nBits = ;
+        genesis.nNonce = ;
 
 	hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("00000d48d8baeb055884eca9046230cab4d72047e4a5d563bc908a7af50ba05b"));
-        assert(genesis.hashMerkleRoot == uint256("0xc759c7d72af4a651c06756eb17ce464c82b31457433102c0af83119a5645b003"));
+        assert(hashGenesisBlock == uint256(""));
+        assert(genesis.hashMerkleRoot == uint256(""));
 
         vSeeds.push_back(CDNSSeedData("216.155.135.73", "216.155.135.73"));
         vSeeds.push_back(CDNSSeedData("149.28.51.167", "149.28.51.167"));
@@ -169,7 +169,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "04CA16BF5915C6D9CABA7A7233879EF6D10A7D083986357E1EB432380436BFC5B56FE05BA6ABD65B8442DE6671C4728B023DFDB377038892D44D9E8D168D013910";
         strObfuscationPoolDummyAddress = "UeTNHbeBMVBk6TQNRwpXooUFuYoeFuoD6f";
-        nStartMasternodePayments = 1545199849;
+        nStartMasternodePayments = 1545453420;
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
@@ -222,15 +222,15 @@ public:
         nModifierUpdateBlock = 51197;
         nMaxMoneyOut = 22500000 * COIN;
         nZerocoinStartHeight = 201576;
-        nZerocoinStartTime = 1540961470;
+        nZerocoinStartTime = 1545453420;
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 9908000; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 9891737; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 9891730; //Last valid accumulator checkpoint
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1544448466;
-        genesis.nNonce = 79855;
+        genesis.nTime = 1545453419;
+        genesis.nNonce = ;
 
 	    hashGenesisBlock = genesis.GetHash();
         //assert(hashGenesisBlock == uint256("0x000007cff63ef602a51bf074e384b3516f0dd202f14d52f7c8c9b1af9423ab2e"));
@@ -298,12 +298,12 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Umbra: 1 day
         nTargetSpacing = 1 * 60;        // Umbra: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1515524400;
+        genesis.nTime = 1545453421;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 732084;
 
         hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 51436;
+        nDefaultPort = 88877;
         //assert(hashGenesisBlock == uint256("0x000008415bdca132b70cf161ecc548e5d0150fd6634a381ee2e99bb8bb77dbb3"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
@@ -334,7 +334,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 51478;
+        nDefaultPort = 88878;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 
