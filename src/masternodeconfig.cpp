@@ -57,41 +57,41 @@ bool CMasternodeConfig::read(std::string& strErr)
                          strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"";
                 streamConfig.close();
                 return false;
-            }
-        }
+              }
+          }
 
-        if (Params().NetworkID() == CBaseChainParams::MAIN) {
-            if (CService(ip).GetPort() != 88876) {
-                strErr = _("Invalid port detected in masternode.conf") + "\n" +
-                         strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
-                         _("(must be 88876 for mainnet)");
-                streamConfig.close();
-                return false;
-            }
-        } else if (CService(ip).GetPort() == 88876) {
-            strErr = _("Invalid port detected in masternode.conf") + "\n" +
-                     strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
-                     _("(88876 could be used only on mainnet)");
-            streamConfig.close();
-            return false;
-        }
+          if (Params().NetworkID() == CBaseChainParams::MAIN) {
+              if (CService(ip).GetPort() != 88876) {
+                  strErr = _("Invalid port detected in masternode.conf") + "\n" +
+                           strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
+                           _("(must be 11234 for mainnet)");
+                  streamConfig.close();
+                  return false;
+              }
+          } else if (CService(ip).GetPort() == 88876) {
+              strErr = _("Invalid port detected in masternode.conf") + "\n" +
+                       strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
+                       _("(11234 could be used only on mainnet)");
+              streamConfig.close();
+              return false;
+          }
 
 
-        add(alias, ip, privKey, txHash, outputIndex);
-    }
+          add(alias, ip, privKey, txHash, outputIndex);
+      }
 
-    streamConfig.close();
-    return true;
-}
+      streamConfig.close();
+      return true;
+  }
 
-bool CMasternodeConfig::CMasternodeEntry::castOutputIndex(int &n)
-{
-    try {
-        n = std::stoi(outputIndex);
-    } catch (const std::exception e) {
-        LogPrintf("%s: %s on getOutputIndex\n", __func__, e.what());
-        return false;
-    }
+  bool CMasternodeConfig::CMasternodeEntry::castOutputIndex(int &n)
+  {
+      try {
+          n = std::stoi(outputIndex);
+      } catch (const std::exception e) {
+          LogPrintf("%s: %s on getOutputIndex\n", __func__, e.what());
+          return false;
+      }
 
-    return true;
-}
+      return true;
+  }
