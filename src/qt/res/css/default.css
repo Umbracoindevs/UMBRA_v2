@@ -1560,12 +1560,12 @@ border:1px solid #000000;
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item {
-background-color:#000000;
+background-color:#3C3C3C;
 color:#fff;
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item:selected { /* Coin Control Item (selected) */
-background-color:##e7240f;
+background-color:#e7240f;
 color:#fff;
 }
 
@@ -1694,7 +1694,7 @@ font-size:14px;
 /**************************** RECEIVE COINS DIALOG **************************************/
 
 QDialog#ReceiveRequestDialog QTextEdit { /* Contents of Receive Coin Dialog */
-border:1px solid #d7d7d7;
+border:1px solid #ffffff;
 }
 
 /**************************** TRANSACTIONS PAGE *****************************************/
@@ -1724,6 +1724,7 @@ color:#fff;
 
 QDialog#TransactionDescDialog QTextEdit { /* Contents of Receive Coin Dialog */
 border:1px solid #ffffff;
+color:#fff;
 }
 
 /********************************* CALENDAR WIDGET **************************************/
