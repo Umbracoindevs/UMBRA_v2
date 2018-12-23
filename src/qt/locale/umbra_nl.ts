@@ -4560,8 +4560,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Umbra Alert" admin@foo.com
         <translation>Je moet een masternodeprivkey opgeven in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
     </message>
     <message>
-        <source>(88876 could be used only on mainnet)</source>
-        <translation>(88876 kan alleen op mainnet worden gebruikt)</translation>
+        <source>(88878 could be used only on mainnet)</source>
+        <translation>(88878 kan alleen op mainnet worden gebruikt)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4572,8 +4572,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Umbra Alert" admin@foo.com
         <translation>(standaard: 1)</translation>
     </message>
     <message>
-        <source>(must be 88876 for mainnet)</source>
-        <translation>(moet 88876 voor mainnet zijn)</translation>
+        <source>(must be 88878 for mainnet)</source>
+        <translation>(moet 88878 voor mainnet zijn)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

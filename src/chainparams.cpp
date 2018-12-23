@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The Umbra_v2 developers
+// Copyright (c) 2018-2019 The Umbra 2 developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     , uint256(""));
+    (     0, uint256("00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -101,7 +101,7 @@ public:
         pchMessageStart[2] = 0xe6;
         pchMessageStart[3] = 0x04;
         vAlertPubKey = ParseHex("04200cf03e12d8b5e06266a7bcf9b77687be7cbc21dfdc4c1da88ea0c22183ceab887a8c5bcd51f8e04f1d8d76469c2999eebb53a806ce401e992c64bdc5b6bc1b");
-        nDefaultPort = 88876;
+        nDefaultPort = 88878;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Umbra starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 99999999;
         nMaxReorganizationDepth = 100;
@@ -113,13 +113,13 @@ public:
         nTargetSpacing = 120;
         nMaturity = 30;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 24100000 * COIN;
+        nMaxMoneyOut = 23000000 * COIN;
 
         nLastPOWBlock = 200;
         nModifierUpdateBlock = 999999999;
         nZerocoinStartHeight = 5120000;
         nAccumulatorStartHeight = 1;
-        nZerocoinStartTime = 1545199849;
+        nZerocoinStartTime = 1545453420;
         nBlockEnforceSerialRange = 1;
         nBlockRecalculateAccumulators = ~1;
         nBlockFirstFraudulent = ~1;
@@ -136,16 +136,16 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime = 1545453420;
-        genesis.nBits = ;
-        genesis.nNonce = ;
+        genesis.nBits = 504365040;
+        genesis.nNonce = 7337;
 
 	hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256(""));
-        assert(genesis.hashMerkleRoot == uint256(""));
+        assert(hashGenesisBlock == uint256("00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
+        assert(genesis.hashMerkleRoot == uint256("1770dfc5ccc547559d74960147430477da739aae8f037f5e193231a5971151d6"));
 
-        vSeeds.push_back(CDNSSeedData("216.155.135.73", "216.155.135.73"));
-        vSeeds.push_back(CDNSSeedData("149.28.51.167", "149.28.51.167"));
         vSeeds.push_back(CDNSSeedData("207.148.21.185", "207.148.21.185"));
+        vSeeds.push_back(CDNSSeedData("45.77.167.240", "45.77.167.240"));
+        vSeeds.push_back(CDNSSeedData("149.28.207.68", "149.28.207.68 "));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 68); // U
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 50); // N
