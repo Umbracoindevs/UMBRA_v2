@@ -113,7 +113,7 @@ public:
         nTargetSpacing = 120;
         nMaturity = 30;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 23000000 * COIN;
+        nMaxMoneyOut = 25000000 * COIN;
 
         nLastPOWBlock = 200;
         nModifierUpdateBlock = 999999999;
@@ -144,7 +144,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x1770dfc5ccc547559d74960147430477da739aae8f037f5e193231a5971151d6"));
 
         vSeeds.push_back(CDNSSeedData("207.148.21.185", "207.148.21.185"));
-        vSeeds.push_back(CDNSSeedData("45.77.167.240", "45.77.167.240"));
+        vSeeds.push_back(CDNSSeedData("97.106.243.166", "97.106.243.166"));
         vSeeds.push_back(CDNSSeedData("149.28.207.68", "149.28.207.68 "));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 68); // U

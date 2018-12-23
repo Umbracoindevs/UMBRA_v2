@@ -1725,13 +1725,16 @@ color:#fff;
 
 QDialog#TransactionDescDialog QTextEdit { /* Contents of Receive Coin Dialog */
 border:1px solid #ffffff;
+background-image: url(':/images/blur');
+background-repeat:no-repeat;
 color:#fff;
 }
+
 
 /********************************* CALENDAR WIDGET **************************************/
 
 QCalendarView {
-border:1px solid #ffffff;
+border:1px transparent;
 }
 
 QCalendarWidget QWidget#qt_calendar_navigationbar { /* Calendar widget navigation bar */
