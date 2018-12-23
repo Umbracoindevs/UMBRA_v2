@@ -1264,6 +1264,7 @@ margin-top:83px;
 margin-left:16px;
 margin-right:5px;
 min-height:16px;
+color: #ffffff;
 }
 
 QWidget .QFrame#frame_2 QListView { /* Transaction List */
@@ -1570,7 +1571,7 @@ color:#fff;
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item:checked { /* Coin Control Item (checked) */
-background-color:#000000;
+background-color:#0029f6;
 color:#fff;
 }
 
