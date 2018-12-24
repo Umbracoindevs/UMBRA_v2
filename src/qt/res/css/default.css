@@ -31,7 +31,7 @@ color:#ffffff;
 }
 
 QMenuBar::item:selected {
-background-color:#000000;
+background-color:#e7240f;
 }
 
 QTabBar::tab {
@@ -40,7 +40,7 @@ color:#ffffff;
 }
 
 QTabBar::tab:selected, QTabBar::tab:hover {
-background:#000000;
+background-color:#e7240f;
 color:#ffffff;
 }
 
@@ -53,7 +53,7 @@ color:#ffffff;
 }
 
 QMenu::item:selected {
-background-color:#000000;
+background-color:#e7240f;
 color:#ffffff;
 }
 
@@ -74,7 +74,7 @@ color:#fff;
 }
 
 QToolBar > QToolButton:checked {
-background-color:#000000;
+background-color:#e7240f;
 color:#ffffff;
 font-weight:bold;
 }
@@ -110,7 +110,7 @@ color:#ffffff;
 }
 
 QTabBar::tab:hover:!selected {
-background-color:#000000;
+background-color:#e7240f;
 }
 
 QWidget {
@@ -189,7 +189,7 @@ padding-bottom:5px;
 }
 
 QPushButton:hover {
-background-color:#000000;
+background-color:#8a1818;
 border: 1px solid #8a1818;
 }
 
@@ -504,7 +504,7 @@ border-right: 1px solid #d7d7d7;
 }
 
 QDialog .QTabWidget QTabBar::tab:selected, QDialog .QTabWidget QTabBar::tab:hover {
-background-color:#000000;
+background-color:#e7240f;
 color:#fff;
 }
 
@@ -545,7 +545,7 @@ padding-right:10px;
 }
 
 QDialog#OpenURIDialog QPushButton#selectFileButton:hover {
-background-color:#000000;
+background-color:#e7240f;
 border: 1px solid #8a1818;
 color:#fff;
 
@@ -594,7 +594,7 @@ padding-right:10px;
 }
 
 QDialog#SignVerifyMessageDialog QPushButton#clearButton_SM:hover {
-background-color:#000000;
+background-color:#e7240f;
 border: 1px solid #8a1818;
 color:#fff;
 }
@@ -619,7 +619,7 @@ padding-right:10px;
 }
 
 QDialog#SignVerifyMessageDialog QPushButton#clearButton_VM:hover {
-background-color:#000000;
+background-color:#e7240f;
 border: 1px solid #8a1818;
 color:#fff;
 }
@@ -643,7 +643,7 @@ padding-right:10px;
 }
 
 QWidget#AddressBookPage QPushButton#newAddress:hover {
-background-color:#000000;
+background-color:#e7240f;
 border: 1px solid #8a1818;
 color:#fff;
 }
@@ -681,7 +681,7 @@ padding-right:10px;
 }
 
 QWidget#AddressBookPage QPushButton#deleteAddress:hover {
-background-color:#000000;
+background-color:#e7240f;
 border: 1px solid #8a1818;
 color:#fff;
 }
@@ -744,7 +744,7 @@ padding-bottom:5px;
 }
 
 QWidget#PrivacyDialog QPushButton:hover {
-background-color:#000000;
+background-color:#e7240f;
 border: 1px solid #8a1818;
 }
 
@@ -1236,13 +1236,11 @@ margin-left:0px;
 
 QWidget .QFrame#frame_2 { /* Transactions Widget */
 min-width:410px;
-min-height:100px;
-margin-right:20px;
+min-height:50px;
+margin-right:15px;
 margin-left:0;
 margin-top:0;
-background-image: url(':/images/armageddon_logo_horizontal');
-background-repeat:none;
-color:#ffffff;
+background-color:#364f3b;
 }
 
 QWidget .QFrame#frame_2 .QLabel#label_4 { /* Recent Transactions Label */
@@ -1253,7 +1251,7 @@ margin-top:83px;
 margin-right:5px;
 padding-right:5px;
 font-weight:bold;
-font-size:15px;
+font-size:16px;
 min-height:24px;
 }
 
@@ -1268,12 +1266,13 @@ color: #ffffff;
 }
 
 QWidget .QFrame#frame_2 QListView { /* Transaction List */
-font-weight:normal;
+font-weight:bold;
 font-size:12px;
 max-width:369px;
 margin-top:12px;
 margin-left:0px;
-color: #ffffff; /* CSS Voodoo - set to -66px to hide default transaction icons */
+display:inline;
+color: #364f3b; /* CSS Voodoo - set to -66px to hide default transaction icons */
 }
 
 /**************************** SEND DIALOG ***********************************************/
@@ -1338,13 +1337,14 @@ padding-right:10px;
 }
 
 QDialog#SendCoinsDialog .QPushButton#clearButton:hover {
-background-color:#000000;
+background-color:#c93c3c;
 border: 1px solid #8a1818;
 color:#fff;
 }
 
 QDialog#SendCoinsDialog .QPushButton#clearButton:pressed {
-border:1px solid #4a4c53;
+border:1px solid #8A1818;
+background-color:#c93c3c;
 }
 
 QDialog#SendCoinsDialog .QPushButton#addButton { /* Add Button */
@@ -1356,13 +1356,13 @@ padding-right:10px;
 }
 
 QDialog#SendCoinsDialog .QPushButton#addButton:hover {
-background-color:#000000;
+background-color:#c93c3c;
 border: 1px solid #8a1818;
 color:#fff;
 }
 
 QDialog#SendCoinsDialog .QPushButton#addButton:pressed {
-border:1px solid #4a4c53;
+border:1px solid #8a1818;
 }
 
 QDialog#SendCoinsDialog .QCheckBox#checkUseObfuscation { /* Obfuscation Checkbox */
@@ -1576,7 +1576,7 @@ color:#fff;
 }
 
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::branch:selected { /* Coin Control Branch Icon */
-background-image: url(':/images/qtreeview_selected');
+tree widget;
 background-repeat:no-repeat;
 background-position:center;
 background-color:#000000;
@@ -1641,7 +1641,7 @@ padding-right:10px;
 }
 
 QWidget#ReceiveCoinsDialog .QFrame#frame2 QPushButton#clearButton:hover {
-background-color:#000000;
+background-color:#e7240f;
 border: 1px solid #8a1818;
 color:#fff;
 }
@@ -1659,7 +1659,7 @@ padding-right:10px;
 }
 
 QWidget#ReceiveCoinsDialog .QFrame#frame QPushButton#showRequestButton:hover {
-background-color:#000000;
+background-color:#e7240f;
 border: 1px solid #8a1818;
 color:#fff;
 }
@@ -1677,7 +1677,7 @@ padding-right:10px;
 }
 
 QWidget#ReceiveCoinsDialog .QFrame#frame QPushButton#removeRequestButton:hover {
-background-color:#000000;
+background-color:#e7240f;
 border: 1px solid #8a1818;
 color:#fff;
 }
@@ -1695,7 +1695,8 @@ font-size:14px;
 /**************************** RECEIVE COINS DIALOG **************************************/
 
 QDialog#ReceiveRequestDialog QTextEdit { /* Contents of Receive Coin Dialog */
-border:1px solid #ffffff;
+border:1px transparent;
+background-image: url(':/images/blur');
 }
 
 /**************************** TRANSACTIONS PAGE *****************************************/

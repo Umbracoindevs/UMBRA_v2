@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("0x00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
+    (     0, uint256("00000b9d3686f1e4ce746190ad8f20a0d3c6de654d9696522eddaec147ceba44"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -65,7 +65,7 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256(""));
+    boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1545453420,
@@ -73,7 +73,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256(""));
+    boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1545453420,
@@ -115,7 +115,7 @@ public:
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 25000000 * COIN;
 
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 400;
         nModifierUpdateBlock = 999999999;
         nZerocoinStartHeight = 5120000;
         nAccumulatorStartHeight = 1;
@@ -130,21 +130,21 @@ public:
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 250 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04d40581a55cdf01aef864e5dc372b8d7118d08d9ca9af20ec4d06d5b4e712f8797928eb62f37d9af9e2bea74e2503c25b34a15a9bf586ea55b2fbbdb3cc65ddef") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime = 1545453420;
-        genesis.nBits = 504365040;
-        genesis.nNonce = 7337;
+        genesis.nBits = 0x1e0ffff0;
+        genesis.nNonce = 2147784;
 
 	hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
-        assert(genesis.hashMerkleRoot == uint256("0x1770dfc5ccc547559d74960147430477da739aae8f037f5e193231a5971151d6"));
+        assert(hashGenesisBlock == uint256("0x00000b9d3686f1e4ce746190ad8f20a0d3c6de654d9696522eddaec147ceba44"));
+        assert(genesis.hashMerkleRoot == uint256("0x6927ff754edb7a732e1394f1832bfba78bdb1faec3363308c399a18e1689e5c2"));
 
         vSeeds.push_back(CDNSSeedData("207.148.21.185", "207.148.21.185"));
-        vSeeds.push_back(CDNSSeedData("97.106.243.166", "97.106.243.166"));
+        vSeeds.push_back(CDNSSeedData("45.77.167.240", "45.77.167.240"));
         vSeeds.push_back(CDNSSeedData("149.28.207.68", "149.28.207.68 "));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 68); // U
