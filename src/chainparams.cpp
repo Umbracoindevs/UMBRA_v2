@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("00000b9d3686f1e4ce746190ad8f20a0d3c6de654d9696522eddaec147ceba44"));
+    (     0, uint256("0x00000b9d3686f1e4ce746190ad8f20a0d3c6de654d9696522eddaec147ceba44"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -100,7 +100,7 @@ public:
         pchMessageStart[1] = 0x32;
         pchMessageStart[2] = 0xe6;
         pchMessageStart[3] = 0x04;
-        vAlertPubKey = ParseHex("04200cf03e12d8b5e06266a7bcf9b77687be7cbc21dfdc4c1da88ea0c22183ceab887a8c5bcd51f8e04f1d8d76469c2999eebb53a806ce401e992c64bdc5b6bc1b");
+        vAlertPubKey = ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f");
         nDefaultPort = 88878;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Umbra starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 99999999;
@@ -167,7 +167,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04CA16BF5915C6D9CABA7A7233879EF6D10A7D083986357E1EB432380436BFC5B56FE05BA6ABD65B8442DE6671C4728B023DFDB377038892D44D9E8D168D013910";
+        strSporkKey = "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f";
         strObfuscationPoolDummyAddress = "UeTNHbeBMVBk6TQNRwpXooUFuYoeFuoD6f";
         nStartMasternodePayments = 1545453420;
 
@@ -208,7 +208,7 @@ public:
         pchMessageStart[1] = 0xa4;
         pchMessageStart[2] = 0x2e;
         pchMessageStart[3] = 0xc5;
-        vAlertPubKey = ParseHex("042292b1f401860eea99e1a8a103effbd7e1c013a59a1a3a0c91c9d1997a0bc6f338567278c11344802838c107055bf7c1641eaed61e879245c255a4f5be5746fc");
+        vAlertPubKey = ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f");
         nDefaultPort = 88877;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
@@ -233,7 +233,7 @@ public:
         genesis.nNonce = 000000;
 
 	    hashGenesisBlock = genesis.GetHash();
-        //assert(hashGenesisBlock == uint256("0x000007cff63ef602a51bf074e384b3516f0dd202f14d52f7c8c9b1af9423ab2e"));
+        //assert(hashGenesisBlocassert(k == uint256("0x000005eba5a4235a480b513d3680a523a6c9941c417dc35e17b6b1a19ecb57c7"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -264,7 +264,7 @@ public:
         nPoolMaxTransactions = 2;
         strSporkKey = "04d9b522d9e5da662c8d2a3520a1c6836d3db9b765946134627a91cd2c68b346b47d347cc1e4e049508d9be3dcb37b37d1b1503484ffec1aff2f7ca39fbd6093c1";
         strObfuscationPoolDummyAddress = "xp87cG8UEQgzs1Bk67Yk884C7pnQfAeo7q";
-        nStartMasternodePayments = 1544448407; //Fri, 09 Jan 2015 21:05:58 GMT
+        nStartMasternodePayments = 1545453421; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
     }
@@ -303,7 +303,7 @@ public:
         genesis.nNonce = 732084;
 
         hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 88877;
+        //nDefaultPort = 88877;
         //assert(hashGenesisBlock == uint256("0x000008415bdca132b70cf161ecc548e5d0150fd6634a381ee2e99bb8bb77dbb3"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
