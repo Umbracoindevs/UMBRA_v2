@@ -52,17 +52,18 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //   (no blocks before with a timestamp after, none after with
 //    timestamp before)
 // + Contains no strange transactions
-static Checkpoints::MapCheckpoints mapCheckpoints = {
+static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (1, uint256("0x00000daa4c05fd5272020c1057045dba4d9a510446b6a3a20dd261b5443e5494"));
-    (2, uint256("0x00000f913c6a0e8635cb1aa94b12b059928df085942af1f7c9859017c4d47a2f"));
-    (3, uint256("0x000004f4be8f8e9c98860167ee99ea4db5a0a423de3b25d19e4777acb1353983"));
-};
+    (0, uint256("bc78615f82ae971323b6df476d6884feeaf91c87f9e1b259cb0b5cbaeb866a9a"))
+    (1, uint256("2301576e1dd0db2c3619c5c86ee9c9c8d191a79e4acca6e131f1aa92d73235e7"))
+    (2, uint256("df7bb40681e543ce0a217c5fedac89f8d2923616c5cee99985d4b4435b8fef05"));
+    (3, uint256("0d42d1b8b4b15f795df51c84b734dc287e3c0b2ec617c61e228cb0a94c511527"));
+    (4, uint256("1206ddc14fc3297d7629f4425711babb9ff16163709dae640bc83ee15a179572"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1545453420, // * UNIX timestamp of last checkpoint block
-    4,      // * total number of transactions between genesis and last checkpoint
+    0,      // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     1000        // * estimated number of transactions per day after checkpoint
 };
@@ -338,7 +339,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 88877;
+        nDefaultPort = 88878;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 
