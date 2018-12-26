@@ -56,9 +56,9 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("bc78615f82ae971323b6df476d6884feeaf91c87f9e1b259cb0b5cbaeb866a9a"))
     (1, uint256("2301576e1dd0db2c3619c5c86ee9c9c8d191a79e4acca6e131f1aa92d73235e7"))
-    (2, uint256("df7bb40681e543ce0a217c5fedac89f8d2923616c5cee99985d4b4435b8fef05"));
-    (3, uint256("0d42d1b8b4b15f795df51c84b734dc287e3c0b2ec617c61e228cb0a94c511527"));
-    (4, uint256("1206ddc14fc3297d7629f4425711babb9ff16163709dae640bc83ee15a179572"));
+    (2, uint256("df7bb40681e543ce0a217c5fedac89f8d2923616c5cee99985d4b4435b8fef05"))
+    (3, uint256("0d42d1b8b4b15f795df51c84b734dc287e3c0b2ec617c61e228cb0a94c511527"))
+    (4, uint256("1206ddc14fc3297d7629f4425711babb9ff16163709dae640bc83ee15a179572"))
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -237,7 +237,7 @@ public:
         genesis.nNonce = 7337;
 
 	    hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlocassert(k == uint256("0x00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
+        assert(hashGenesisBlocassert( == uint256("0x00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
         assert(genesis.hashMerkleRoot == uint256("0x1770dfc5ccc547559d74960147430477da739aae8f037f5e193231a5971151d6"));
 
         vFixedSeeds.clear();
