@@ -24,9 +24,9 @@
     <widget class="QTabWidget" name="multisigTabWidget">
      <property name="styleSheet">
       <string notr="true">QScrollArea{border: 1px solid #5b4c7c;}
-QFrame{background-color:#f2f0f0;}
-QLabel{background-color:#ffffff;}
-QFrame &gt; QLabel{background-color:#f2f0f0;}</string>
+QFrame{background-color:#000000;}
+QLabel{background-color:#000000;}
+QFrame &gt; QLabel{background-color:#000000;}</string>
      </property>
      <property name="currentIndex">
       <number>0</number>
