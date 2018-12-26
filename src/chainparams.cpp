@@ -52,7 +52,6 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //   (no blocks before with a timestamp after, none after with
 //    timestamp before)
 // + Contains no strange transactions
-{
 static Checkpoints::MapCheckpoints mapCheckpoints = {
     boost::assign::map_list_of
     (1, uint256("0x00000daa4c05fd5272020c1057045dba4d9a510446b6a3a20dd261b5443e5494"));
@@ -339,7 +338,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 88878;
+        nDefaultPort = 88877;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 
