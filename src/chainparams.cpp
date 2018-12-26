@@ -143,9 +143,9 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 2147784;
 
-	hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000b9d3686f1e4ce746190ad8f20a0d3c6de654d9696522eddaec147ceba44"));
-        assert(genesis.hashMerkleRoot == uint256("0x6927ff754edb7a732e1394f1832bfba78bdb1faec3363308c399a18e1689e5c2"));
+        hashGenesisBlock = genesis.GetHash();
+              assert(hashGenesisBlock == uint256("0x00000b9d3686f1e4ce746190ad8f20a0d3c6de654d9696522eddaec147ceba44"));
+              assert(genesis.hashMerkleRoot == uint256("0x0x6927ff754edb7a732e1394f1832bfba78bdb1faec3363308c399a18e1689e5c2"));
 
         vSeeds.push_back(CDNSSeedData("207.148.21.185", "207.148.21.185"));
         vSeeds.push_back(CDNSSeedData("45.77.167.240", "45.77.167.240"));
