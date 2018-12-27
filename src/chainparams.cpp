@@ -56,9 +56,6 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("bc78615f82ae971323b6df476d6884feeaf91c87f9e1b259cb0b5cbaeb866a9a"))
     (1, uint256("2301576e1dd0db2c3619c5c86ee9c9c8d191a79e4acca6e131f1aa92d73235e7"))
-    (2, uint256("df7bb40681e543ce0a217c5fedac89f8d2923616c5cee99985d4b4435b8fef05"))
-    (3, uint256("0d42d1b8b4b15f795df51c84b734dc287e3c0b2ec617c61e228cb0a94c511527"))
-    (4, uint256("1206ddc14fc3297d7629f4425711babb9ff16163709dae640bc83ee15a179572"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -69,18 +66,18 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x000005eba5a4235a480b513d3680a523a6c9941c417dc35e17b6b1a19ecb57c7"));
+    boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1545453419,
+    1755421,
     0,
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x000007b64a96e0d0d226f3244fedfba022645ed62f8cc1acce8f4aaf14acc622"));
+    boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1545453421,
+    175422,
     0,
     100};
 
@@ -144,8 +141,8 @@ public:
         genesis.nNonce = 2147784;
 
         hashGenesisBlock = genesis.GetHash();
-              assert(hashGenesisBlock == uint256("00000b9d3686f1e4ce746190ad8f20a0d3c6de654d9696522eddaec147ceba44"));
-              assert(genesis.hashMerkleRoot == uint256("6927ff754edb7a732e1394f1832bfba78bdb1faec3363308c399a18e1689e5c2"));
+        assert(hashGenesisBlock == uint256("0x00000b9d3686f1e4ce746190ad8f20a0d3c6de654d9696522eddaec147ceba44"));
+        assert(genesis.hashMerkleRoot == uint256("0x6927ff754edb7a732e1394f1832bfba78bdb1faec3363308c399a18e1689e5c2"));
 
         vSeeds.push_back(CDNSSeedData("207.148.21.185", "207.148.21.185"));
         vSeeds.push_back(CDNSSeedData("45.77.167.240", "45.77.167.240"));
@@ -237,8 +234,7 @@ public:
         genesis.nNonce = 7337;
 
         hashGenesisBlock = genesis.GetHash();
-                assert(hashGenesisBlock == uint256("00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
-                assert(genesis.hashMerkleRoot == uint256("1770dfc5ccc547559d74960147430477da739aae8f037f5e193231a5971151d6"));
+        assert(hashGenesisBlock == uint256("0x00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
