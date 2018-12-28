@@ -54,8 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("bc78615f82ae971323b6df476d6884feeaf91c87f9e1b259cb0b5cbaeb866a9a"))
-    (1, uint256("2301576e1dd0db2c3619c5c86ee9c9c8d191a79e4acca6e131f1aa92d73235e7"))
+    (0, uint256("0x00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -97,6 +96,11 @@ public:
     {
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
+        /**
+         * The message start string is designed to be unlikely to occur in normal data.
+         * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
+         * a large 4-byte int at any alignment.
+         */
         pchMessageStart[0] = 0xf8;
         pchMessageStart[1] = 0xc3;
         pchMessageStart[2] = 0xe7;
@@ -141,8 +145,8 @@ public:
         genesis.nNonce = 2147784;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000b9d3686f1e4ce746190ad8f20a0d3c6de654d9696522eddaec147ceba44"));
-        assert(genesis.hashMerkleRoot == uint256("0x6927ff754edb7a732e1394f1832bfba78bdb1faec3363308c399a18e1689e5c2"));
+        assert(hashGenesisBlock == uint256("0x00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
+        assert(genesis.hashMerkleRoot == uint256("0x73aaf5bae5cfc464a02788141f4aa9cc6ffb6218e7f7cff7518a6efd8cdb2458"));
 
         vSeeds.push_back(CDNSSeedData("207.148.21.185", "207.148.21.185"));
         vSeeds.push_back(CDNSSeedData("45.77.167.240", "45.77.167.240"));
@@ -157,7 +161,7 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fRequireRPCPassword = true;
+        fRequireRPCPassword = false;
         fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
@@ -254,7 +258,7 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
-        fRequireRPCPassword = true;
+        fRequireRPCPassword = false;
         fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = true;
         fDefaultConsistencyChecks = false;
