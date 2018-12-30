@@ -274,11 +274,10 @@ fi
     $as_echo "$0: In particular, zsh $ZSH_VERSION has bugs and should"
     $as_echo "$0: be upgraded to zsh 4.3.4 or later."
   else
-    $as_echo "$0: Please tell bug-autoconf@gnu.org and www.umbra.io
-$0: about your system, including any error possibly output
-$0: before this message. Then install a modern shell, or
-$0: manually run the script under such a shell if you do
-$0: have one."
+    $as_echo "$0: Please tell bug-autoconf@gnu.org and www.umbra.io about
+$0: your system, including any error possibly output before
+$0: this message. Then install a modern shell, or manually
+$0: run the script under such a shell if you do have one."
   fi
   exit 1
 fi
@@ -2548,9 +2547,9 @@ $as_echo "$as_me: WARNING: $2: see the Autoconf documentation" >&2;}
 $as_echo "$as_me: WARNING: $2:     section \"Present But Cannot Be Compiled\"" >&2;}
     { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: $2: proceeding with the compiler's result" >&5
 $as_echo "$as_me: WARNING: $2: proceeding with the compiler's result" >&2;}
-( $as_echo "## ---------------------------- ##
+( $as_echo "## --------------------------- ##
 ## Report this to www.umbra.io ##
-## ---------------------------- ##"
+## --------------------------- ##"
      ) | sed "s/^/$as_me: WARNING:     /" >&2
     ;;
 esac
@@ -29391,7 +29390,6 @@ fi
 
 
 $as_echo "#define CLIENT_VERSION_MAJOR 2" >>confdefs.h
-$as_echo "#define CLIENT_VERSION_MAJOR 1" >>confdefs.h
 
 
 $as_echo "#define CLIENT_VERSION_MINOR 0" >>confdefs.h
@@ -29409,7 +29407,6 @@ $as_echo "#define CLIENT_VERSION_IS_RELEASE true" >>confdefs.h
 $as_echo "#define COPYRIGHT_YEAR 2018" >>confdefs.h
 
 CLIENT_VERSION_MAJOR=2
-CLIENT_VERSION_MAJOR=1
 
 CLIENT_VERSION_MINOR=0
 

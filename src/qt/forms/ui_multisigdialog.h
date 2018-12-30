@@ -130,9 +130,9 @@ public:
         multisigTabWidget = new QTabWidget(MultisigDialog);
         multisigTabWidget->setObjectName(QStringLiteral("multisigTabWidget"));
         multisigTabWidget->setStyleSheet(QLatin1String("QScrollArea{border: 1px solid #5b4c7c;}\n"
-"QFrame{background-color:#f2f0f0;}\n"
-"QLabel{background-color:#ffffff;}\n"
-"QFrame > QLabel{background-color:#f2f0f0;}"));
+"QFrame{background-color:#000000;}\n"
+"QLabel{background-color:#000000;}\n"
+"QFrame > QLabel{background-color:#000000;}"));
         addMultisigTab = new QWidget();
         addMultisigTab->setObjectName(QStringLiteral("addMultisigTab"));
         QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);

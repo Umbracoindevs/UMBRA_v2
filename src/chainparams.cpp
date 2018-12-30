@@ -1,3 +1,4 @@
+
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
@@ -54,26 +55,67 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
+    (0, uint256("0x983187781fecc3181af6fc5211abbd2feb62e09fadf971970353cf98e6b2fc10"))
+    (1, uint256("0x00000fa538e56e9bd6b0a4c06019b82d16bb1400f6e7edcdbc67e6c88514dfb6"))
+    (2, uint256("0x00000785b3ee2eec1fd5f5862ab0c12b73c0c804e80c438271d4c0080005c68d"))
+    (3, uint256("0x00000306b123fc64cb76630286043cd316fa17e03d055cfa0ed6df7d5b57a90e"))
+    (4, uint256("0x0000090723b6ec9bdcd445a905b505cee99d18f6739d1491c8cee9deaade9bb1"))
+    (5, uint256("0x00000684a89d81490521936df24658ce25ecf26ff6c34053d1f5fb5f1b9d3c0c"))
+    (6, uint256("0x000008b887f7bdd417a2243c3590c8a33949f4eb5c9ddc0bec911e2c9c52d252"))
+    (7, uint256("0x0000071a27e992df12af84c11a1403052d1921f14d87db6735bd4c6ac99b06f2"))
+    (8, uint256("0x00000d705aa419c4562a551b30518d8eb09c11973f56354aecab755515bda153"))
+    (9, uint256("0x000007f7b475e3a58483815753917e1d5e5e51b143f02652ab846bf1dcc14afb"))
+    (10, uint256("0x000008f68b2dd90f1974c128039802319b0224e057f7aa27cf91e7bc0977493f"))
+    (11, uint256("0x00000625199f686bfdb9b75bd64a4d60f059ed9bd69edecd1d8f001bbe76dba7"))
+    (12, uint256("0x00000b58960b18aa47b8bda5641e5758cb12260c488ddb72e885b4850cd639ba"))
+    (13, uint256("0x00000d194268b10138578c8eebe84b700ed5e0b3b75a14434081c73fe47bb60a"))
+    (14, uint256("0x000009b19560ed19488e98665aeb2329cd0f318b07d29437ee6513b07761d78a"))
+    (15, uint256("0x000007eddd61e08f5c0c2ab19b493c832d071d1881ed10ba8c8c4c9f5ffa4ba2"))
+    (16, uint256("0x000003ceb1556bf246421fb18c04be371f389013c6a51ff08cd1faf5d2a468f0"))
+    (17, uint256("0x0000055d1c7358d5c00cf568c50a516420c783dd1e223036d4089c5c398de11b"))
+    (18, uint256("0x0000044982de4b31c88ab1f5917fe600fb2f86a6af8d2476332af0ee8078ea73"))
+    (19, uint256("0x00000236037a71a70f43d9d3284a62b2297ed864768ef849f7eee6146c218b31"))
+    (20, uint256("0x0000040bf71af77340466eb441f24746172f660eb2943b5957cf21d8dc778c1e"))
+    (21, uint256("0x00000daacc730ab8ada8ec863795a2d99fe43acfac8ea6d6c909f4b2b64e8f02"))
+    (22, uint256("0x000006e7d1c2559529c5052b7dcd167a461a043210e46ac18021ab8993d545cd"))
+    (23, uint256("0x000009bef300979b85e22895a4b17eeedffa23230578f9a1f2eafc3d9ae87591"))
+    (24, uint256("0x00000ccf86804a27d94d2fe819575521310cfdf965511d7eeaf71f62d0c4bf0e"))
+    (25, uint256("0x000002842d0f81d18a00a131f2b757f95408a36c2d989e96c96b011372144728"))
+    (26, uint256("0x00000099692c0804828760c5d3357c979f38309a45627cdf6917f61dc569b9a7"))
+    (27, uint256("0x000001ddcfd31e9a767cbdbcd5e905316bc70e315ceae712a6f021e1dcad1099"))
+    (28, uint256("0x00000236a5aaa9117e1ce2e57e8f93c2e3477da67a2d790d37248dcc583c6860"))
+    (29, uint256("0x00000355fb660684cb73e57da9093d61eb416a53e4369d5ae47ddeea4391ba17"))
+    (30, uint256("0x000003db5733392f57d6da6e5c5552e44b6d43e22d57dd9b1616193b1ea725db"))
+    (31, uint256("0x000001733224f54b91b74734689857c29c37eda58739625880ef6080af921720"))
+    (32, uint256("0x0000015f85c38328113a7bd6cfabe0c852f7dca27db0b7c2c408491b619e4933"))
+    (33, uint256("0x00000150687bf2da9551cd8c7478595f8f07a2b97ee884c947a8b490fa395f3e"))
+    (34, uint256("0x0000033597b810ab66092a78653543e78da94106986c1c284987800b52008acf"))
+    (35, uint256("0x000003adf2a36d9f72a954ec2deba720ede29b16b0dd18716ea77cf7321dd4fe"))
+    (36, uint256("0x0000050ca19dceb5958f705a78ce1e19af923918ce91be2460fd0c4ab0d28655"))
+    (37, uint256("0x000003c445daec9b8ad35ceff5f4845ba1252d41cdda2bb2a281b714f4fc125f"))
+    (38, uint256("0x0000059297d7d2e846b2d890650e0f98edcd5bff6e2fec517c0ab47962c47f3f"))
+    (39, uint256("0x0000063d57f23ffa7f02f0059fc4afcb3de5b49aa24a450cb5532a0afd1813d6"))
+    (40, uint256("0x0000024c292696153561f0e8a6288644ff738483e0f3ba7eac276ff004569dc6"));
+
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1545453420, // * UNIX timestamp of last checkpoint block
-    0,      // * total number of transactions between genesis and last checkpoint
+    1546150485, // * UNIX timestamp of last checkpoint block
+    13,      // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     1000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x001"));
+    boost::assign::map_list_of(0, uint256("0x0cf8ee76af1e7ce3340e88b5ce3fc6d72a8ffa1ed4a274c6731291a3daebae0f"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1755421,
+    1546202840,
     0,
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x001"));
+    boost::assign::map_list_of(0, uint256("0x0"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     175422,
@@ -101,11 +143,11 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xf8;
-        pchMessageStart[1] = 0xc3;
-        pchMessageStart[2] = 0xe7;
-        pchMessageStart[3] = 0xd1;
-        vAlertPubKey = ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f");
+        pchMessageStart[0] = 0x3f;
+        pchMessageStart[1] = 0x39;
+        pchMessageStart[2] = 0xe9;
+        pchMessageStart[3] = 0x08;
+        vAlertPubKey = ParseHex("044102bad584e559c38ad8be50484b570d77a58251ff078eb2c75e57a9d60966c1e4b1c63df646db583612111fc413a4d8ca327f37525e27b12bde03f56d1d50e2");
         nDefaultPort = 88878;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Umbra starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 99999999;
@@ -135,18 +177,18 @@ public:
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 250 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("044102bad584e559c38ad8be50484b570d77a58251ff078eb2c75e57a9d60966c1e4b1c63df646db583612111fc413a4d8ca327f37525e27b12bde03f56d1d50e2") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime = 1545453420;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2147784;
+        genesis.nNonce = 118011;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
-        assert(genesis.hashMerkleRoot == uint256("0x73aaf5bae5cfc464a02788141f4aa9cc6ffb6218e7f7cff7518a6efd8cdb2458"));
+        assert(hashGenesisBlock == uint256("0x983187781fecc3181af6fc5211abbd2feb62e09fadf971970353cf98e6b2fc10"));
+        assert(genesis.hashMerkleRoot == uint256("0xe5b9c9a658a89f8a7af6b01443045f7423345fb3ab17dc3436335a98a3fec70b"));
 
         vSeeds.push_back(CDNSSeedData("207.148.21.185", "207.148.21.185"));
         vSeeds.push_back(CDNSSeedData("45.77.167.240", "45.77.167.240"));
@@ -172,7 +214,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f";
+        strSporkKey = "0x044102bad584e559c38ad8be50484b570d77a58251ff078eb2c75e57a9d60966c1e4b1c63df646db583612111fc413a4d8ca327f37525e27b12bde03f56d1d50e2" ;
         strObfuscationPoolDummyAddress = "UX11LPuyMfnEHBW71v7LRraw95SFZLfjQJ";
         nStartMasternodePayments = 1545453420;
 
@@ -209,11 +251,11 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x84;
-        pchMessageStart[1] = 0xb8;
-        pchMessageStart[2] = 0x8f;
-        pchMessageStart[3] = 0xc9;
-        vAlertPubKey = ParseHex("04d40581a55cdf01aef864e5dc372b8d7118d08d9ca9af20ec4d06d5b4e712f8797928eb62f37d9af9e2bea74e2503c25b34a15a9bf586ea55b2fbbdb3cc65ddef");
+        pchMessageStart[0] = 0x35;
+        pchMessageStart[1] = 0xc8;
+        pchMessageStart[2] = 0x8d;
+        pchMessageStart[3] = 0xc5;
+        vAlertPubKey = ParseHex("0405b9b540363a2d702bc33095753cf026f27b69600ab7ce0c1fe16da645fd4c662e4dc8dd608b78b6c3130722dd29c3f4e26099b53f36d4a5a902f401bf344ecf");
         nDefaultPort = 88877;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
@@ -221,12 +263,12 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Umbra: 1 day
         nTargetSpacing = 1 * 60;  // Umbra: 1 minute
-        nLastPOWBlock = 400;
+        nLastPOWBlock = 50;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197;
-        nMaxMoneyOut = 22500000 * COIN;
-        nZerocoinStartHeight = 201576;
+        nMaxMoneyOut = 50000000 * COIN;
+        nZerocoinStartHeight = 1;
         nZerocoinStartTime = 1545453419;
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 9908000; //Trigger a recalculation of accumulators
@@ -234,16 +276,16 @@ public:
         nBlockLastGoodCheckpoint = 0; //Last valid accumulator checkpoint
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1545453419;
-        genesis.nNonce = 7337;
+        genesis.nTime = 1546202840;
+        genesis.nNonce = 29;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000c91bc64519f82722f6e91839e3b1ddf383e81eb9fe6218ab9ff47b98d89"));
+        //assert(hashGenesisBlock == uint256("0x0cf8ee76af1e7ce3340e88b5ce3fc6d72a8ffa1ed4a274c6731291a3daebae0f"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("test-seeds1.umbra.net", "test-seeds1.umbra.net"));
-        vSeeds.push_back(CDNSSeedData("test-seeds2.umbra.net", "test-seeds2.umbra.net"));
+        vSeeds.push_back(CDNSSeedData("127.0.0.1", "127.0.0.1"));
+	vSeeds.push_back(CDNSSeedData("127.0.0.1", "127.0.0.1"));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet umbra addresses start with 'x' or 'y'
@@ -267,7 +309,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "04d40581a55cdf01aef864e5dc372b8d7118d08d9ca9af20ec4d06d5b4e712f8797928eb62f37d9af9e2bea74e2503c25b34a15a9bf586ea55b2fbbdb3cc65ddef";
+        strSporkKey = "0405b9b540363a2d702bc33095753cf026f27b69600ab7ce0c1fe16da645fd4c662e4dc8dd608b78b6c3130722dd29c3f4e26099b53f36d4a5a902f401bf344ecf";
         strObfuscationPoolDummyAddress = "xp87cG8UEQgzs1Bk67Yk884C7pnQfAeo7q";
         nStartMasternodePayments = 1545453421; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short

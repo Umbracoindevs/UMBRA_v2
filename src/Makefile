@@ -1357,7 +1357,7 @@ CCDEPMODE = depmode=gcc3
 CFLAGS = -pipe -O2 
 CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
-CLIENT_VERSION_MAJOR = 1
+CLIENT_VERSION_MAJOR = 2
 CLIENT_VERSION_MINOR = 0
 CLIENT_VERSION_REVISION = 0
 COMPARISON_TOOL_REORG_TESTS = 0
@@ -1548,7 +1548,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /
+prefix = /zs
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run

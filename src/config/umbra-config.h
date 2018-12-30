@@ -15,7 +15,7 @@
 #define CLIENT_VERSION_IS_RELEASE true
 
 /* Major version */
-#define CLIENT_VERSION_MAJOR 1
+#define CLIENT_VERSION_MAJOR 2
 
 /* Minor version */
 #define CLIENT_VERSION_MINOR 0
