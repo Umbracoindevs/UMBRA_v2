@@ -96,8 +96,6 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (38, uint256("0x0000059297d7d2e846b2d890650e0f98edcd5bff6e2fec517c0ab47962c47f3f"))
     (39, uint256("0x0000063d57f23ffa7f02f0059fc4afcb3de5b49aa24a450cb5532a0afd1813d6"))
     (301, uint256("0x00000027dcdfdf4f27fafb5aa7da398cae981b8afe6d9b9a4fbd8d257a411e55"));
-
-
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1546214086, // * UNIX timestamp of last checkpoint block
@@ -107,7 +105,7 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x0cf8ee76af1e7ce3340e88b5ce3fc6d72a8ffa1ed4a274c6731291a3daebae0f"));
+    boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1546202840,
@@ -115,10 +113,10 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x0"));
+    boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    175422,
+    1545453420,
     0,
     100};
 
@@ -148,7 +146,7 @@ public:
         pchMessageStart[2] = 0xe9;
         pchMessageStart[3] = 0x08;
         vAlertPubKey = ParseHex("044102bad584e559c38ad8be50484b570d77a58251ff078eb2c75e57a9d60966c1e4b1c63df646db583612111fc413a4d8ca327f37525e27b12bde03f56d1d50e2");
-        nDefaultPort = 88878;
+        nDefaultPort = 18878;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Umbra starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 99999999;
         nMaxReorganizationDepth = 100;
@@ -170,7 +168,7 @@ public:
         nBlockEnforceSerialRange = 1;
         nBlockRecalculateAccumulators = ~1;
         nBlockFirstFraudulent = ~1;
-        nBlockLastGoodCheckpoint = ~1;
+        nBlockLastGoodCheckpoint = ~400;
         const char* pszTimestamp = "Elon Musk I want to be clear — I do not respect the SEC Rockets Oranges and David Hasselhoff";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
@@ -381,7 +379,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 88878;
+        nDefaultPort = 18878;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 
