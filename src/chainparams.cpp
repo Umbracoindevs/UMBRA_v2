@@ -331,10 +331,10 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
         strNetworkID = "regtest";
-        pchMessageStart[0] = 0x69;
-        pchMessageStart[1] = 0xc8;
-        pchMessageStart[2] = 0x9e;
-        pchMessageStart[3] = 0xbd;
+        pchMessageStart[0] = 0x34;
+        pchMessageStart[1] = 0xc4;
+        pchMessageStart[2] = 0x92;
+        pchMessageStart[3] = 0xb7;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
@@ -348,7 +348,7 @@ public:
         genesis.nNonce = 732084;
 
         hashGenesisBlock = genesis.GetHash();
-        //nDefaultPort = 88879;
+        nDefaultPort = 18879;
         //assert(hashGenesisBlock == uint256("0x000008415bdca132b70cf161ecc548e5d0150fd6634a381ee2e99bb8bb77dbb3"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
