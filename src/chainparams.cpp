@@ -95,13 +95,13 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (37, uint256("0x000003c445daec9b8ad35ceff5f4845ba1252d41cdda2bb2a281b714f4fc125f"))
     (38, uint256("0x0000059297d7d2e846b2d890650e0f98edcd5bff6e2fec517c0ab47962c47f3f"))
     (39, uint256("0x0000063d57f23ffa7f02f0059fc4afcb3de5b49aa24a450cb5532a0afd1813d6"))
-    (40, uint256("0x0000024c292696153561f0e8a6288644ff738483e0f3ba7eac276ff004569dc6"));
+    (301, uint256("0x00000027dcdfdf4f27fafb5aa7da398cae981b8afe6d9b9a4fbd8d257a411e55"));
 
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1546150485, // * UNIX timestamp of last checkpoint block
-    13,      // * total number of transactions between genesis and last checkpoint
+    1546214086, // * UNIX timestamp of last checkpoint block
+    301,      // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     1000        // * estimated number of transactions per day after checkpoint
 };
@@ -214,7 +214,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "0x044102bad584e559c38ad8be50484b570d77a58251ff078eb2c75e57a9d60966c1e4b1c63df646db583612111fc413a4d8ca327f37525e27b12bde03f56d1d50e2" ;
+        strSporkKey = "042feb9a8e026467a8316c1f140440af99e4b5fdbb6949eea83e8eae76ab82bc91d63ffb857938aad23d2cc949dbc6bc1ab1661f7501f2ddeddacd307774e6dd50" ;
         strObfuscationPoolDummyAddress = "UX11LPuyMfnEHBW71v7LRraw95SFZLfjQJ";
         nStartMasternodePayments = 1545453420;
 
