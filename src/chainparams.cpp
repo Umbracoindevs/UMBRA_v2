@@ -212,7 +212,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "044102bad584e559c38ad8be50484b570d77a58251ff078eb2c75e57a9d60966c1e4b1c63df646db583612111fc413a4d8ca327f37525e27b12bde03f56d1d50e2" ;
+        strSporkKey = "042feb9a8e026467a8316c1f140440af99e4b5fdbb6949eea83e8eae76ab82bc91d63ffb857938aad23d2cc949dbc6bc1ab1661f7501f2ddeddacd307774e6dd50" ;
         strObfuscationPoolDummyAddress = "UX11LPuyMfnEHBW71v7LRraw95SFZLfjQJ";
         nStartMasternodePayments = 1545453420;
 
@@ -254,7 +254,7 @@ public:
         pchMessageStart[2] = 0x8d;
         pchMessageStart[3] = 0xc5;
         vAlertPubKey = ParseHex("0405b9b540363a2d702bc33095753cf026f27b69600ab7ce0c1fe16da645fd4c662e4dc8dd608b78b6c3130722dd29c3f4e26099b53f36d4a5a902f401bf344ecf");
-        nDefaultPort = 18882;
+        nDefaultPort = 88882;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
