@@ -935,7 +935,7 @@ margin-left:16px;
 QWidget .QFrame#frame .QLabel#labelBalanceText { /* Available Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#000000;
+background-image: url(':/images/walletFrame');
 color:#fff;
 margin-right:5px;
 padding-right:5px;
@@ -961,7 +961,7 @@ margin-left:16px;
 QWidget .QFrame#frame .QLabel#labelPendingText { /* Pending Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#000000;
+background-image: url(':/images/walletFrame');
 color:#ffffff;
 margin-right:5px;
 padding-right:5px;
@@ -1009,7 +1009,7 @@ margin-left:16px;
 QWidget .QFrame#frame .QLabel#labelTotalText { /* Total Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#000000;
+background-image: url(':/images/walletFrame');
 color:#fff;
 margin-right:5px;
 padding-right:5px;
@@ -1044,7 +1044,7 @@ padding-right:5px;
 QWidget .QFrame#frame_4 .QLabel#labelzBalanceText { /* Available zBRKS Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#000000;
+background-image: url(':/images/walletFrame');
 color:#fff;
 margin-right:5px;
 padding-right:5px;
@@ -1215,7 +1215,7 @@ margin-left:0px;
 QWidget .QFrame#frame_3 .QLabel#labelTotalTextz { /* Available total Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:transparent;
+background-image: url(':/images/walletFrame');
 color:#ffffff;
 margin-right:5px;
 padding-right:5px;
