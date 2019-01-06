@@ -13,12 +13,18 @@
   <property name="windowTitle">
    <string>Blockchain Explorer</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background-color:rgb(0, 0, 0);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">background-color:rgb(0, 0, 0);</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
@@ -123,7 +129,7 @@
          <x>0</x>
          <y>0</y>
          <width>780</width>
-         <height>489</height>
+         <height>507</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -134,6 +140,12 @@
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:rgb(3, 3, 3);</string>
           </property>
           <property name="text">
            <string>TextLabel</string>
@@ -161,7 +173,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>27</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
