@@ -11,3 +11,4 @@
        START WALLET 
        LET IT SYNC 
        
+# will finish after sleep 
